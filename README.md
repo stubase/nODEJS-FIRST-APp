@@ -8,4 +8,5 @@ HiBykes is an android application that implements a machine learning model to pr
 
 ## Installation
 
-- 
+- Open this link to download [HiBykes App](https://drive.google.com/file/d/11JaF4oVAzx6De2LobZoWjJ34y925TXyp/view?usp=sharing)
+- Install H
