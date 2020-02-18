@@ -16,4 +16,8 @@ Verify your account by clicking the verification link sent to your email and log
 
 ## Interface
 
-![MacBook Pro - 1 (3)](https://user-images.githubusercontent.c
+![MacBook Pro - 1 (3)](https://user-images.githubusercontent.com/62416304/121394754-dbc1be80-c97b-11eb-8a2f-54d39a72f163.png)
+
+## Our Team
+- [Desi Musfiroh](https://github.com/DesiMusfiroh)
+- [Deffin Achmaddi
