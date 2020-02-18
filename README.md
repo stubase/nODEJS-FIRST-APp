@@ -12,4 +12,8 @@ HiBykes is an android application that implements a machine learning model to pr
 - Install HiBykes App on your smartphone.
 - Register your account with a valid email address.
 Verify your account by clicking the verification link sent to your email and log in with your verified account.
-- If login is successful you will be directed to the home page, and you can
+- If login is successful you will be directed to the home page, and you can access all the features in the HiBykes app.
+
+## Interface
+
+![MacBook Pro - 1 (3)](https://user-images.githubusercontent.c
