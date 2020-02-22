@@ -22,4 +22,8 @@ Verify your account by clicking the verification link sent to your email and log
 - [Desi Musfiroh](https://github.com/DesiMusfiroh)
 - [Deffin Achmaddifa](https://github.com/deffin890)
 - [Husni Rofiq Muttaqin](https://github.com/hrofiq)
-- [Gamalliel Sharon](https://github.com/Gamalliel1
+- [Gamalliel Sharon](https://github.com/Gamalliel19)
+- [Ricky Tanzil](https://github.com/rickytzl)
+- [Farah Qotrunnada](https://github.com/farahqotrunnada)
+
+Thank you ~~
