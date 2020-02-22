@@ -1,3 +1,10 @@
 {
   "project_info": {
-    "project_number": 
+    "project_number": "921027046051",
+    "project_id": "hibykes",
+    "storage_bucket": "hibykes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "
