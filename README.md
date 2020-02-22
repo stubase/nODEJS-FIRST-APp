@@ -20,4 +20,6 @@ Verify your account by clicking the verification link sent to your email and log
 
 ## Our Team
 - [Desi Musfiroh](https://github.com/DesiMusfiroh)
-- [Deffin Achmaddi
+- [Deffin Achmaddifa](https://github.com/deffin890)
+- [Husni Rofiq Muttaqin](https://github.com/hrofiq)
+- [Gamalliel Sharon](https://github.com/Gamalliel1
