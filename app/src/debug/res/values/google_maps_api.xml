@@ -4,4 +4,9 @@
 
     To get one, follow this link, follow the directions and press "Create" at the end:
 
-    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=17:20:48:D6:E7:F6:65:5A:A2:B4:2E:B5:43:
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=17:20:48:D6:E7:F6:65:5A:A2:B4:2E:B5:43:7E:2D:BE:C6:31:22:BA%3Bcom.capstone.hibykes.ui
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com
