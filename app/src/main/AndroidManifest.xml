@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.capstone.hibykes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_hibykes"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_hibykes"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HiBykes">
+        <activity android:name=".ui.profile.Profile"></activity>
+        <activity android:name=".ui.listStation.ListStationActivity" />
+        <activity android:name=".ui.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.prediction.PredictionActivity" />
+        <activity android:name=".ui.station.StationActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".ui.register.RegisterActivity" />
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.MainActivity" />
+    </application>
+
+</manifest>
