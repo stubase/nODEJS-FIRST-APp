@@ -14,4 +14,8 @@ class LocalDataSource private constructor(private val mHiBykesDao: HiBykesDao) {
         private var INSTANCE: LocalDataSource? = null
 
         fun getInstance(hiBykesDao: HiBykesDao): LocalDataSource =
-         
+            INSTANCE ?: LocalDataSource(hiBykesDao)
+    }
+
+    fun getAllBookmark(): LiveData<List<BookmarkEntity>> {
+        return mHiBy
