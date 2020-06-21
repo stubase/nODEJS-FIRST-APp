@@ -10,4 +10,8 @@ import kotlinx.coroutines.launch
 
 class LocalDataSource private constructor(private val mHiBykesDao: HiBykesDao) {
 
-    com
+    companion object {
+        private var INSTANCE: LocalDataSource? = null
+
+        fun getInstance(hiBykesDao: HiBykesDao): LocalDataSource =
+         
