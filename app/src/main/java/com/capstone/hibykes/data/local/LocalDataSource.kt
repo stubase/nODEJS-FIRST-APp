@@ -18,4 +18,11 @@ class LocalDataSource private constructor(private val mHiBykesDao: HiBykesDao) {
     }
 
     fun getAllBookmark(): LiveData<List<BookmarkEntity>> {
-        return mHiBy
+        return mHiBykesDao.getAllBookmark()
+    }
+
+    fun insert(prediction: PredictionEntity) {
+        insertToDb(prediction)
+    }
+
+    priv
