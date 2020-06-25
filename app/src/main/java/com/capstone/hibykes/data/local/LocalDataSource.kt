@@ -28,4 +28,6 @@ class LocalDataSource private constructor(private val mHiBykesDao: HiBykesDao) {
     private fun insertToDb(prediction: PredictionEntity) {
         CoroutineScope(Dispatchers.IO).launch {
             val bookmark = BookmarkEntity(
-       
+                prediction.id,
+                prediction.station,
+                prediction.datetime.substring(0,10) + " / " + prediction.datetime.substring(11,16
