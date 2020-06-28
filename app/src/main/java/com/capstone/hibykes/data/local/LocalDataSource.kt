@@ -35,4 +35,11 @@ class LocalDataSource private constructor(private val mHiBykesDao: HiBykesDao) {
                 prediction.desc
             )
             mHiBykesDao.insert(bookmark)
- 
+        }
+    }
+
+    suspend fun checkBookmark(id: String) : Int {
+        return mHiBykesDao.checkBookmark(id)
+    }
+
+    suspend fun deleteFromBookmark(id
