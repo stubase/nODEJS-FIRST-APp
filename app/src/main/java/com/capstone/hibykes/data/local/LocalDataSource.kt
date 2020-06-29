@@ -42,4 +42,7 @@ class LocalDataSource private constructor(private val mHiBykesDao: HiBykesDao) {
         return mHiBykesDao.checkBookmark(id)
     }
 
-    suspend fun deleteFromBookmark(id
+    suspend fun deleteFromBookmark(id: String) {
+        mHiBykesDao.deleteFromBookmark(id)
+    }
+}
