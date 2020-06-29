@@ -6,4 +6,8 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class PredictionEntity (
     val id: String,
-    val stat
+    val station: String,
+    val datetime: String,
+    val demandCount: Int,
+    val desc: String,
+)  : Parcelable
