@@ -9,4 +9,7 @@ data class StationEntity (
     val name: String? = null,
     val description: String? = null,
     val address: String? = null,
-    val latitude: S
+    val latitude: String? = null,
+    val longitude: String? = null,
+    val image: String? = null,
+) : Parcelable
