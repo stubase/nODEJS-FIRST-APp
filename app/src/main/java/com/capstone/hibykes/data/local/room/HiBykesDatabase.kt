@@ -7,4 +7,9 @@ import androidx.room.RoomDatabase
 import com.capstone.hibykes.data.local.entity.BookmarkEntity
 
 @Database(entities = [BookmarkEntity::class], version = 1)
-abstract class HiBykes
+abstract class HiBykesDatabase : RoomDatabase() {
+    abstract fun hiBykesDao(): HiBykesDao
+
+    companion object {
+        @Volatile
+        private var INSTA
