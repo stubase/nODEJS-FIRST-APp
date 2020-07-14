@@ -12,4 +12,8 @@ abstract class HiBykesDatabase : RoomDatabase() {
 
     companion object {
         @Volatile
-        private var INSTA
+        private var INSTANCE : HiBykesDatabase? = null
+
+        fun getDatabase(context: Context) : HiBykesDatabase? {
+            if (INSTANCE == null) {
+                synchronize
