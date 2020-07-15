@@ -16,4 +16,6 @@ abstract class HiBykesDatabase : RoomDatabase() {
 
         fun getDatabase(context: Context) : HiBykesDatabase? {
             if (INSTANCE == null) {
-                synchronize
+                synchronized(HiBykesDatabase::class) {
+                    INSTANCE= Room.databaseBuilder(context.applicationContext,
+                        HiBykesDatabase::clas
