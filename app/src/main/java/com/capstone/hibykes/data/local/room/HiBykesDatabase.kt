@@ -18,4 +18,10 @@ abstract class HiBykesDatabase : RoomDatabase() {
             if (INSTANCE == null) {
                 synchronized(HiBykesDatabase::class) {
                     INSTANCE= Room.databaseBuilder(context.applicationContext,
-                        HiBykesDatabase::clas
+                        HiBykesDatabase::class.java, "hibykes_database").build()
+                }
+            }
+            return INSTANCE
+        }
+    }
+}
