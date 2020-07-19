@@ -13,4 +13,5 @@ interface ModelApi {
     ): Call<ListPredictionResponse>
 
 //    @POST("/")
-//  
+//    fun getPredictionModel(@Body body: PredictionRequest?): Call<ListPredictionResponse>
+}
