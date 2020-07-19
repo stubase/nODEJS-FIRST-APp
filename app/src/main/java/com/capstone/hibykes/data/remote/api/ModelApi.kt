@@ -7,4 +7,10 @@ import retrofit2.http.*
 interface ModelApi {
     @FormUrlEncoded
     @POST("/")
-    fun 
+    fun getPredictionModel(
+        @Field("date") date: String,
+        @Field("station") station: String
+    ): Call<ListPredictionResponse>
+
+//    @POST("/")
+//  
