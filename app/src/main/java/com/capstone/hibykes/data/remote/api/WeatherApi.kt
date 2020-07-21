@@ -12,4 +12,9 @@ interface WeatherApi {
         @Query("q") cityName: String
     ): Call<WeatherResponse>
 
-    @GET("data/2.5/air_pollution?&appid=b79bc281c4
+    @GET("data/2.5/air_pollution?&appid=b79bc281c43f45a69cd831ebc73127d8")
+    fun getAirPollutionData(
+        @Query("lat") lat: Double,
+        @Query("lon") lon: Double
+    ): Call<AirPollutionResponse>
+}
