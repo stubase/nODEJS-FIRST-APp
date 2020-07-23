@@ -10,4 +10,5 @@ class WeatherApiConfig {
     companion object {
         fun getApiService(): WeatherApi {
             val loggingInterceptor =
-         
+                HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+            val client = OkHttpClient.Builder
