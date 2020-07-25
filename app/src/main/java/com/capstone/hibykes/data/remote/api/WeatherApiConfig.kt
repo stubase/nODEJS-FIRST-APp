@@ -18,4 +18,8 @@ class WeatherApiConfig {
                 .baseUrl("https://api.openweathermap.org/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
-                
+                .build()
+            return retrofit.create(WeatherApi::class.java)
+        }
+    }
+}
