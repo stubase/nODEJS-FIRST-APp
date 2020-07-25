@@ -49,3 +49,26 @@ data class Components(
 
 	@field:SerializedName("pm2_5")
 	val pm25: Double? = null,
+
+	@field:SerializedName("pm10")
+	val pm10: Double? = null,
+
+	@field:SerializedName("nh3")
+	val nh3: Double? = null,
+
+	@field:SerializedName("co")
+	val co: Double? = null
+) : Parcelable
+
+@Parcelize
+data class ListItem(
+
+	@field:SerializedName("dt")
+	val dt: Int? = null,
+
+	@field:SerializedName("components")
+	val components: Components? = null,
+
+	@field:SerializedName("main")
+	val main: MainPollution? = null
+) : Parcelable
