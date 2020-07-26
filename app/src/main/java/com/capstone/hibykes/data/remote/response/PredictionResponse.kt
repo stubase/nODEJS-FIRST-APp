@@ -8,4 +8,8 @@ import kotlinx.parcelize.Parcelize
 data class PredictionResponse(
 
     @field:SerializedName("datetime")
-    val datetime: 
+    val datetime: String? = null,
+
+    @field:SerializedName("demand")
+    val demandCount: Int? = null
+) : Parcelable
