@@ -11,4 +11,10 @@ data class WeatherResponse(
 	val visibility: Int? = null,
 
 	@field:SerializedName("timezone")
-	val t
+	val timezone: Int? = null,
+
+	@field:SerializedName("main")
+	val main: Main? = null,
+
+	@field:SerializedName("clouds")
+	val cloud
