@@ -25,4 +25,10 @@ data class WeatherResponse(
 	@field:SerializedName("dt")
 	val dt: Int? = null,
 
+	@field:SerializedName("coord")
+	val coord: Coord? = null,
+
+	@field:SerializedName("weather")
+	val weather: List<WeatherItem?>? = null,
+
 	@field:Serialize
