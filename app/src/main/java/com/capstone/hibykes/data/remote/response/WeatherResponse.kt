@@ -56,4 +56,14 @@ data class Wind(
 	@field:SerializedName("speed")
 	val speed: Double? = null,
 
-	@field:Serial
+	@field:SerializedName("gust")
+	val gust: Double? = null
+) : Parcelable
+
+@Parcelize
+data class Coord(
+
+	@field:SerializedName("lon")
+	val lon: Double? = null,
+
+	@field
