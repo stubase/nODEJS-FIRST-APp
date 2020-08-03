@@ -82,4 +82,10 @@ data class Main(
 	@field:SerializedName("humidity")
 	val humidity: Int? = null,
 
-	@field:S
+	@field:SerializedName("pressure")
+	val pressure: Int? = null,
+
+	@field:SerializedName("feels_like")
+	val feelsLike: Double? = null,
+
+	@field:Serialized
