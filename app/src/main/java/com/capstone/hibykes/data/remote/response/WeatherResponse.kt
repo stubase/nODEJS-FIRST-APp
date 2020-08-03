@@ -74,4 +74,12 @@ data class Coord(
 data class Main(
 
 	@field:SerializedName("temp")
-	
+	val temp: Double? = null,
+
+	@field:SerializedName("temp_min")
+	val tempMin: Double? = null,
+
+	@field:SerializedName("humidity")
+	val humidity: Int? = null,
+
+	@field:S
