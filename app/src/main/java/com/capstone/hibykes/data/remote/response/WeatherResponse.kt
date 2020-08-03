@@ -66,4 +66,12 @@ data class Coord(
 	@field:SerializedName("lon")
 	val lon: Double? = null,
 
-	@field
+	@field:SerializedName("lat")
+	val lat: Double? = null
+) : Parcelable
+
+@Parcelize
+data class Main(
+
+	@field:SerializedName("temp")
+	
