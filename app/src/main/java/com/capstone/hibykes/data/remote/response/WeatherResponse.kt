@@ -88,4 +88,13 @@ data class Main(
 	@field:SerializedName("feels_like")
 	val feelsLike: Double? = null,
 
-	@field:Serialized
+	@field:SerializedName("temp_max")
+	val tempMax: Double? = null
+) : Parcelable
+
+@Parcelize
+data class Clouds(
+
+	@field:SerializedName("all")
+	val all: Int? = null
+)
