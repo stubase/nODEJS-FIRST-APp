@@ -97,4 +97,12 @@ data class Clouds(
 
 	@field:SerializedName("all")
 	val all: Int? = null
-)
+) : Parcelable
+
+@Parcelize
+data class WeatherItem(
+
+	@field:SerializedName("icon")
+	val icon: String? = null,
+
+	@field:SerializedName("description")
