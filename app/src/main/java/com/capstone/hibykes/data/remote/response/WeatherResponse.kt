@@ -112,4 +112,13 @@ data class WeatherItem(
 	val main: String? = null,
 
 	@field:SerializedName("id")
-	val id: 
+	val id: Int? = null
+) : Parcelable
+
+@Parcelize
+data class Sys(
+
+	@field:SerializedName("country")
+	val country: String? = null,
+
+	@field:Seri
