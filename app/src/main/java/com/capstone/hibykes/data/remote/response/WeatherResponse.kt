@@ -121,4 +121,10 @@ data class Sys(
 	@field:SerializedName("country")
 	val country: String? = null,
 
-	@field:Seri
+	@field:SerializedName("sunrise")
+	val sunrise: Int? = null,
+
+	@field:SerializedName("sunset")
+	val sunset: Int? = null,
+
+	@field:SerializedN
