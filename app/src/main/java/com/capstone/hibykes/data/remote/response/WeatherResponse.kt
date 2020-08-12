@@ -127,4 +127,9 @@ data class Sys(
 	@field:SerializedName("sunset")
 	val sunset: Int? = null,
 
-	@field:SerializedN
+	@field:SerializedName("id")
+	val id: Int? = null,
+
+	@field:SerializedName("type")
+	val type: Int? = null
+) : Parcelable
