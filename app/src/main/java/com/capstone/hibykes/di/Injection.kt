@@ -9,4 +9,6 @@ import com.capstone.hibykes.data.remote.RemoteDataSource
 object Injection {
     fun provideRepository(context: Context): HiBykesRepositories {
         val database = HiBykesDatabase.getDatabase(context)
-        val remoteDa
+        val remoteDataSource = RemoteDataSource.getInstance()
+        val localDataSource = LocalDataSource.getInstance(database!!.hiBykesDao())
+        return 
