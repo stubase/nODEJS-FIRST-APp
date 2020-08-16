@@ -11,4 +11,6 @@ object Injection {
         val database = HiBykesDatabase.getDatabase(context)
         val remoteDataSource = RemoteDataSource.getInstance()
         val localDataSource = LocalDataSource.getInstance(database!!.hiBykesDao())
-        return 
+        return HiBykesRepositories.getInstance(remoteDataSource, localDataSource)
+    }
+}
