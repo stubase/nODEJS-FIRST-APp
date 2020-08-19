@@ -11,4 +11,7 @@ import com.capstone.hibykes.ui.maps.MapsFragment
 import com.capstone.hibykes.ui.settings.SettingsFragment
 
 
-class MainA
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bun
