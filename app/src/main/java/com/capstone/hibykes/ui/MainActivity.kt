@@ -17,4 +17,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(bindin
+        setContentView(binding.root)
+
+        binding.navView.setItemSelected(R.id.navigation_home, true)
+
+        supportFragmentManager
+            .beginTransaction(
