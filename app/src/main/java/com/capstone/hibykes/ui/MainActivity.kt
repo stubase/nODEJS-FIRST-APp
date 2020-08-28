@@ -22,4 +22,13 @@ class MainActivity : AppCompatActivity() {
         binding.navView.setItemSelected(R.id.navigation_home, true)
 
         supportFragmentManager
-            .beginTransaction(
+            .beginTransaction()
+            .replace(R.id.nav_host_fragment, HomeFragment())
+            .commit()
+
+        bottomMenu()
+
+    }
+
+    private fun bottomMenu() {
+    
