@@ -31,4 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bottomMenu() {
-    
+        binding.navView.setOnItemSelectedListener{
+            var fragment: Fragment? = null
+            fragment = when (it) {
+           
