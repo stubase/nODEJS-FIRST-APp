@@ -34,4 +34,6 @@ class MainActivity : AppCompatActivity() {
         binding.navView.setOnItemSelectedListener{
             var fragment: Fragment? = null
             fragment = when (it) {
-           
+                R.id.navigation_maps ->  MapsFragment()
+                R.id.navigation_bookmark ->  BookmarkFragment()
+                R.id.navigation_
