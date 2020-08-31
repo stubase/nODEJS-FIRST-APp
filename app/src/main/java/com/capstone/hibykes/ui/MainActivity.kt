@@ -36,4 +36,8 @@ class MainActivity : AppCompatActivity() {
             fragment = when (it) {
                 R.id.navigation_maps ->  MapsFragment()
                 R.id.navigation_bookmark ->  BookmarkFragment()
-                R.id.navigation_
+                R.id.navigation_settings -> SettingsFragment()
+                else -> HomeFragment()
+            }
+            if (fragment != null) {
+    
