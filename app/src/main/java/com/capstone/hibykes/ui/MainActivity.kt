@@ -42,4 +42,12 @@ class MainActivity : AppCompatActivity() {
             if (fragment != null) {
                 supportFragmentManager
                     .beginTransaction()
-                    .replace(R.id.nav_host_fragment, fragmen
+                    .replace(R.id.nav_host_fragment, fragment)
+                    .commit()
+            }
+        }
+
+
+    }
+
+}
