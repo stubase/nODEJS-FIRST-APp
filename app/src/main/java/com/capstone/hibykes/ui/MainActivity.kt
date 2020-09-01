@@ -40,4 +40,6 @@ class MainActivity : AppCompatActivity() {
                 else -> HomeFragment()
             }
             if (fragment != null) {
-    
+                supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.nav_host_fragment, fragmen
