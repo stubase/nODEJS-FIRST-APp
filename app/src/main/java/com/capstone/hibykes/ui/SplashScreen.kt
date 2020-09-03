@@ -8,4 +8,8 @@ import android.view.WindowManager
 import com.capstone.hibykes.R
 import com.capstone.hibykes.ui.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase
+import com.google.firebase.auth.FirebaseUser
+
+class SplashScreen : AppCompatActivity() {
+    private var auth: FirebaseAuth? = null
+    override fun onCreate(savedInstance
