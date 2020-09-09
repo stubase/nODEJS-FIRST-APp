@@ -24,4 +24,10 @@ class SplashScreen : AppCompatActivity() {
         // we used the postDelayed(Runnable, time) method
         // to send a message with a delayed time.
         Handler().postDelayed({
-    
+            val currentUser = auth?.currentUser
+            updateUI(currentUser)
+            finish()
+        }, 3000)
+    }
+
+    private fun update
