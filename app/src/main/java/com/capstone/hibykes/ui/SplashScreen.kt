@@ -33,4 +33,7 @@ class SplashScreen : AppCompatActivity() {
     private fun updateUI(currentUser : FirebaseUser?){
         if(currentUser == null){
             val intent = Intent(this, LoginActivity::class.java)
-            startActivity
+            startActivity(intent)
+        }
+    }
+}
