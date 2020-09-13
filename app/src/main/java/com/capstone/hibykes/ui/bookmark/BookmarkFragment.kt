@@ -11,4 +11,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.hibykes.data.local.entity.BookmarkEntity
-import com.capstone.hib
+import com.capstone.hibykes.data.local.entity.PredictionEntity
+import com.capstone.hibykes.databinding.FragmentBookmarkBinding
+import com.capstone.hibykes.ui.prediction.Pred
