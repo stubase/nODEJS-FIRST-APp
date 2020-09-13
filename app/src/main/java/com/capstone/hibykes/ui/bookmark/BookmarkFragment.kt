@@ -13,4 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.hibykes.data.local.entity.BookmarkEntity
 import com.capstone.hibykes.data.local.entity.PredictionEntity
 import com.capstone.hibykes.databinding.FragmentBookmarkBinding
-import com.capstone.hibykes.ui.prediction.Pred
+import com.capstone.hibykes.ui.prediction.PredictionActivity
+import com.capstone.hibykes.viewmodel.ViewModelFactory
+
+class BookmarkFragment : Fragment() {
+
+    private lateinit var viewMo
