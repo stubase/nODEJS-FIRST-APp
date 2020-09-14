@@ -18,4 +18,6 @@ import com.capstone.hibykes.viewmodel.ViewModelFactory
 
 class BookmarkFragment : Fragment() {
 
-    private lateinit var viewMo
+    private lateinit var viewModel: BookmarkViewModel
+    private lateinit var fragmentBookmarkBinding: FragmentBookmarkBinding
+    private lateinit var bookmarkAdapter: BookmarkAdapt
