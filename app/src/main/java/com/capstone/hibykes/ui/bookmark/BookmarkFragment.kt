@@ -20,4 +20,7 @@ class BookmarkFragment : Fragment() {
 
     private lateinit var viewModel: BookmarkViewModel
     private lateinit var fragmentBookmarkBinding: FragmentBookmarkBinding
-    private lateinit var bookmarkAdapter: BookmarkAdapt
+    private lateinit var bookmarkAdapter: BookmarkAdapter
+    private var bookmarks = ArrayList<PredictionEntity>()
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
