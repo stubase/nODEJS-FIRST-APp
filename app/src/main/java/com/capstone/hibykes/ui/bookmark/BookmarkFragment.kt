@@ -25,4 +25,8 @@ class BookmarkFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         fragmentBookmarkBinding = FragmentBookmarkBinding.inflate(layoutInflater, container, false)
-        return fragmentBookmar
+        return fragmentBookmarkBinding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated
