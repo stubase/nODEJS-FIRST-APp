@@ -40,4 +40,9 @@ class BookmarkFragment : Fragment() {
         bookmarkAdapter.setOnItemClickCallback(object : BookmarkAdapter.OnItemClickCallback {
             override fun onItemClicked(data: PredictionEntity) {
                 val detailIntent = Intent(context, PredictionActivity::class.java)
-                detailIntent.putExtra(PredictionActivity.EXTRA_P
+                detailIntent.putExtra(PredictionActivity.EXTRA_PREDICTION, data)
+                startActivity(detailIntent)
+            }
+        })
+
+        fragmentBookmarkBinding.appl
