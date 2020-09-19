@@ -53,3 +53,10 @@ class BookmarkFragment : Fragment() {
 
         viewModel.getAllBookmark().observe(viewLifecycleOwner, Observer {
             if (it != null) {
+                val list = mapList(it)
+                bookmarkAdapter.setList(list)
+            }
+        })
+    }
+
+    private fun m
