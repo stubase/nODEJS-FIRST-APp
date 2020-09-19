@@ -32,4 +32,9 @@ class BookmarkFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val factory = ViewModelFactory.getInstance(requireActivity())
-        viewModel = ViewModelProvider(this, fa
+        viewModel = ViewModelProvider(this, factory)[BookmarkViewModel::class.java]
+
+        bookmarkAdapter = BookmarkAdapter(bookmarks)
+        bookmarkAdapter.notifyDataSetChanged()
+
+        bookm
