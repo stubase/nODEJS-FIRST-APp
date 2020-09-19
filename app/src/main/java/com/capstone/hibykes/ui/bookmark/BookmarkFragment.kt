@@ -39,4 +39,5 @@ class BookmarkFragment : Fragment() {
 
         bookmarkAdapter.setOnItemClickCallback(object : BookmarkAdapter.OnItemClickCallback {
             override fun onItemClicked(data: PredictionEntity) {
-                val 
+                val detailIntent = Intent(context, PredictionActivity::class.java)
+                detailIntent.putExtra(PredictionActivity.EXTRA_P
