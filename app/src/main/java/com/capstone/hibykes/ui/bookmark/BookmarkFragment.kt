@@ -45,4 +45,7 @@ class BookmarkFragment : Fragment() {
             }
         })
 
-        fragmentBookmarkBinding.appl
+        fragmentBookmarkBinding.apply {
+            rvBookmark.layoutManager = GridLayoutManager(context, 2)
+            rvBookmark.setHasFixedSize(true)
+            rvBookmark.adapt
