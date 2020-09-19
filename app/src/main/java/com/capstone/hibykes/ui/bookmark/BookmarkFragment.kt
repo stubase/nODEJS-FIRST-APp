@@ -37,4 +37,6 @@ class BookmarkFragment : Fragment() {
         bookmarkAdapter = BookmarkAdapter(bookmarks)
         bookmarkAdapter.notifyDataSetChanged()
 
-        bookm
+        bookmarkAdapter.setOnItemClickCallback(object : BookmarkAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: PredictionEntity) {
+                val 
