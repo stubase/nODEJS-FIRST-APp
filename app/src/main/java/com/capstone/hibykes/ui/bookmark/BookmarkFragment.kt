@@ -48,4 +48,8 @@ class BookmarkFragment : Fragment() {
         fragmentBookmarkBinding.apply {
             rvBookmark.layoutManager = GridLayoutManager(context, 2)
             rvBookmark.setHasFixedSize(true)
-            rvBookmark.adapt
+            rvBookmark.adapter = bookmarkAdapter
+        }
+
+        viewModel.getAllBookmark().observe(viewLifecycleOwner, Observer {
+            if (it != null) {
