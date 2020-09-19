@@ -59,4 +59,6 @@ class BookmarkFragment : Fragment() {
         })
     }
 
-    private fun m
+    private fun mapList(bookmarks: List<BookmarkEntity>): ArrayList<PredictionEntity> {
+        val listPrediction = ArrayList<PredictionEntity>()
+       
