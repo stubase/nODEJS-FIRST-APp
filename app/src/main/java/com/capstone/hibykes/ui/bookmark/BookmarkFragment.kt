@@ -65,4 +65,8 @@ class BookmarkFragment : Fragment() {
             val predictionMapped = PredictionEntity(
                 bookmark.id,
                 bookmark.stationId,
-   
+                bookmark.datetime,
+                bookmark.demandCount,
+                bookmark.desc
+            )
+            lis
