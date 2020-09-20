@@ -69,4 +69,8 @@ class BookmarkFragment : Fragment() {
                 bookmark.demandCount,
                 bookmark.desc
             )
-            lis
+            listPrediction.add(predictionMapped)
+        }
+        return listPrediction
+    }
+}
