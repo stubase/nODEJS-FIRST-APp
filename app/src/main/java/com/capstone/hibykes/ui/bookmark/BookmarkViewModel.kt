@@ -6,4 +6,7 @@ import com.capstone.hibykes.data.HiBykesRepositories
 import com.capstone.hibykes.data.local.entity.BookmarkEntity
 
 class BookmarkViewModel(private val hiBykesRepositories: HiBykesRepositories) : ViewModel() {
-    fun getAllBookmark(): LiveData<List<Bo
+    fun getAllBookmark(): LiveData<List<BookmarkEntity>> {
+        return hiBykesRepositories.getAllBookmark()
+    }
+}
