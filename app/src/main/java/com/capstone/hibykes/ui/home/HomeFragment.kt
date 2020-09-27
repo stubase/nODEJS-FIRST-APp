@@ -25,4 +25,8 @@ import java.lang.StringBuilder
 class HomeFragment : Fragment() {
 
     private lateinit var fragmentHomeBinding: FragmentHomeBinding
-    private lateinit var stationA
+    private lateinit var stationAdapter: StationAdapter
+    private lateinit var viewModel: HomeViewModel
+    private lateinit var auth: FirebaseAuth
+
+    override fun onCr
