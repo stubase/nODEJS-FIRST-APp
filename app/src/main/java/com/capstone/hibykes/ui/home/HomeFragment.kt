@@ -29,4 +29,9 @@ class HomeFragment : Fragment() {
     private lateinit var viewModel: HomeViewModel
     private lateinit var auth: FirebaseAuth
 
-    override fun onCr
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        fragmentHomeBinding = FragmentHomeBinding.i
