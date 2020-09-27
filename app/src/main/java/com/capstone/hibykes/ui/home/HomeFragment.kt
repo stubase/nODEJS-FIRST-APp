@@ -38,4 +38,8 @@ class HomeFragment : Fragment() {
         return fragmentHomeBinding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val factory = ViewModelFactory.getInstance(requireActivity())
+        v
