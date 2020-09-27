@@ -34,4 +34,8 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        fragmentHomeBinding = FragmentHomeBinding.i
+        fragmentHomeBinding = FragmentHomeBinding.inflate(layoutInflater, container, false)
+        return fragmentHomeBinding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) 
