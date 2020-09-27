@@ -45,4 +45,8 @@ class HomeFragment : Fragment() {
         viewModel = ViewModelProvider(this, factory)[HomeViewModel::class.java]
 
         fragmentHomeBinding.btnViewAll.setOnClickListener {
-           
+            val intent = Intent(context, ListStationActivity::class.java)
+            startActivity(intent)
+        }
+        auth = Firebase.auth
+   
