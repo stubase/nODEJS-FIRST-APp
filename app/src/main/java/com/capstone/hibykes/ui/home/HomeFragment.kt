@@ -20,4 +20,9 @@ import com.capstone.hibykes.viewmodel.ViewModelFactory
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import java.lang.StringBuilde
+import java.lang.StringBuilder
+
+class HomeFragment : Fragment() {
+
+    private lateinit var fragmentHomeBinding: FragmentHomeBinding
+    private lateinit var stationA
