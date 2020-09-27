@@ -42,4 +42,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val factory = ViewModelFactory.getInstance(requireActivity())
-        v
+        viewModel = ViewModelProvider(this, factory)[HomeViewModel::class.java]
+
+        fragmentHomeBinding.btnViewAll.setOnClickListener {
+           
