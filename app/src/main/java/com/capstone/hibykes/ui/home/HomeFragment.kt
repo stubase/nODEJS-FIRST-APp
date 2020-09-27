@@ -49,4 +49,7 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
         auth = Firebase.auth
-   
+        val name = auth.currentUser?.displayName
+        fragmentHomeBinding.tvHi.text = getString(R.string.hai, name)
+
+        getWeatherData
