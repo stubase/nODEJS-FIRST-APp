@@ -17,4 +17,7 @@ import com.capstone.hibykes.databinding.FragmentHomeBinding
 import com.capstone.hibykes.ui.listStation.ListStationActivity
 import com.capstone.hibykes.ui.station.StationActivity
 import com.capstone.hibykes.viewmodel.ViewModelFactory
-import com.google.fi
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+import java.lang.StringBuilde
