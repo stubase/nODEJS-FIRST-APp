@@ -66,4 +66,8 @@ class HomeFragment : Fragment() {
             fragmentHomeBinding.apply {
                 shimmerRvStation.stopShimmer()
                 shimmerRvStation.visibility = View.GONE
-                rvStation.visibility = View
+                rvStation.visibility = View.VISIBLE
+
+                rvStation.layoutManager =
+                    StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
+          
