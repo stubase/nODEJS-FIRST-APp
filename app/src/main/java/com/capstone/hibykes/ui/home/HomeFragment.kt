@@ -64,4 +64,6 @@ class HomeFragment : Fragment() {
             stationAdapter.notifyDataSetChanged()
 
             fragmentHomeBinding.apply {
-             
+                shimmerRvStation.stopShimmer()
+                shimmerRvStation.visibility = View.GONE
+                rvStation.visibility = View
