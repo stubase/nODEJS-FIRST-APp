@@ -70,4 +70,7 @@ class HomeFragment : Fragment() {
 
                 rvStation.layoutManager =
                     StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
-          
+                rvStation.setHasFixedSize(true)
+                rvStation.adapter = stationAdapter
+            }
+            stationAdapter.se
