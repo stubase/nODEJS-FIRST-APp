@@ -73,4 +73,6 @@ class HomeFragment : Fragment() {
                 rvStation.setHasFixedSize(true)
                 rvStation.adapter = stationAdapter
             }
-            stationAdapter.se
+            stationAdapter.setOnItemClickCallback(object : StationAdapter.OnItemClickCallback {
+                override fun onItemClicked(data: StationEntity) {
+           
