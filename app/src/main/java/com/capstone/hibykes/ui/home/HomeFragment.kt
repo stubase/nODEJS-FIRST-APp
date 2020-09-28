@@ -60,4 +60,8 @@ class HomeFragment : Fragment() {
     private fun getStations() {
         viewModel.getStationsData().observe(viewLifecycleOwner, {
 
-   
+            stationAdapter = StationAdapter(it)
+            stationAdapter.notifyDataSetChanged()
+
+            fragmentHomeBinding.apply {
+             
