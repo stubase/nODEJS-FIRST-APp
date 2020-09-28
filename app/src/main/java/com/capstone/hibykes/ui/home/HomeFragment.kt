@@ -52,4 +52,12 @@ class HomeFragment : Fragment() {
         val name = auth.currentUser?.displayName
         fragmentHomeBinding.tvHi.text = getString(R.string.hai, name)
 
-        getWeatherData
+        getWeatherData()
+        getAirPollution()
+        getStations()
+    }
+
+    private fun getStations() {
+        viewModel.getStationsData().observe(viewLifecycleOwner, {
+
+   
