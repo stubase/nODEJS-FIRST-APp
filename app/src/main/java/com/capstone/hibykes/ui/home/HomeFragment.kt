@@ -87,4 +87,6 @@ class HomeFragment : Fragment() {
         viewModel.getCurrentWeather("Jakarta").observe(viewLifecycleOwner, { data ->
             if (data != null) {
                 fragmentHomeBinding.apply {
-                    
+                    shimmerCityName.stopShimmer()
+                    shimmerCityName.visibility = View.GONE
+                    tvCityName.vi
