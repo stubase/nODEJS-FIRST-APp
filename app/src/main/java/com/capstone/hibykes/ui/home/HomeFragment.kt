@@ -84,4 +84,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun getWeatherData() {
-        viewModel.getCurrentW
+        viewModel.getCurrentWeather("Jakarta").observe(viewLifecycleOwner, { data ->
+            if (data != null) {
+                fragmentHomeBinding.apply {
+                    
