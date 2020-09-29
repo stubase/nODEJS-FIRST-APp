@@ -76,4 +76,12 @@ class HomeFragment : Fragment() {
             stationAdapter.setOnItemClickCallback(object : StationAdapter.OnItemClickCallback {
                 override fun onItemClicked(data: StationEntity) {
                     val intent = Intent(context, StationActivity::class.java)
-                    intent.putExtra(StationActivity.EXTRA_STATION, 
+                    intent.putExtra(StationActivity.EXTRA_STATION, data)
+                    startActivity(intent)
+                }
+            })
+        })
+    }
+
+    private fun getWeatherData() {
+        viewModel.getCurrentW
