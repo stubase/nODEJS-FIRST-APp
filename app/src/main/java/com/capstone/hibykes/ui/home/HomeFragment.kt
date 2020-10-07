@@ -93,4 +93,7 @@ class HomeFragment : Fragment() {
 
                     shimmerWeather.stopShimmer()
                     shimmerWeather.visibility = View.GONE
-                  
+                    lyWeather.visibility = View.VISIBLE
+
+                    tvCityName.text = data.name.toString()
+                    Glide.with(requireContext())
