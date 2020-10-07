@@ -89,4 +89,8 @@ class HomeFragment : Fragment() {
                 fragmentHomeBinding.apply {
                     shimmerCityName.stopShimmer()
                     shimmerCityName.visibility = View.GONE
-                    tvCityName.vi
+                    tvCityName.visibility = View.VISIBLE
+
+                    shimmerWeather.stopShimmer()
+                    shimmerWeather.visibility = View.GONE
+                  
