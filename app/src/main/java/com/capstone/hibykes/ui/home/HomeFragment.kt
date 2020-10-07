@@ -98,4 +98,6 @@ class HomeFragment : Fragment() {
                     tvCityName.text = data.name.toString()
                     Glide.with(requireContext())
                         .load("https://openweathermap.org/img/wn/" + (data.weather?.get(0)?.icon) + "@2x.png")
-    
+                        .centerCrop()
+                        .into(imgWeatherPictures)
+                    tvTemperature.text = StringBuilder(data.main?.
