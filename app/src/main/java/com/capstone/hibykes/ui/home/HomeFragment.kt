@@ -104,4 +104,9 @@ class HomeFragment : Fragment() {
                     tvWeather.text = data.weather?.get(0)?.description.toString()
                 }
             }
-        
+        })
+    }
+
+    private fun getAirPollution() {
+        viewModel.getAirPollution(-6.174597, 106.843615).observe(viewLifecycleOwner, { data ->
+   
