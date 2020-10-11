@@ -100,4 +100,8 @@ class HomeFragment : Fragment() {
                         .load("https://openweathermap.org/img/wn/" + (data.weather?.get(0)?.icon) + "@2x.png")
                         .centerCrop()
                         .into(imgWeatherPictures)
-                    tvTemperature.text = StringBuilder(data.main?.
+                    tvTemperature.text = StringBuilder(data.main?.temp.toString() + "°C")
+                    tvWeather.text = data.weather?.get(0)?.description.toString()
+                }
+            }
+        
