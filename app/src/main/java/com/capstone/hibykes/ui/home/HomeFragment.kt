@@ -118,4 +118,7 @@ class HomeFragment : Fragment() {
             if (data != null) {
                 fragmentHomeBinding.apply {
                     val aqi = data.list?.get(0)?.main?.aqi
-           
+                    when (aqi) {
+                        in 0..50 -> {
+                            tvAqiIndex.text = StringBuilder("AQI : $aqi")
+         
