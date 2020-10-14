@@ -115,4 +115,7 @@ class HomeFragment : Fragment() {
             fragmentHomeBinding.shimmerAirpolution.visibility = View.GONE
             fragmentHomeBinding.lyAirpolution.visibility = View.VISIBLE
 
-          
+            if (data != null) {
+                fragmentHomeBinding.apply {
+                    val aqi = data.list?.get(0)?.main?.aqi
+           
