@@ -112,4 +112,7 @@ class HomeFragment : Fragment() {
             Log.d("pollution", "AQI data = ${data.list?.get(0)?.main?.aqi}")
 
             fragmentHomeBinding.shimmerAirpolution.stopShimmer()
-      
+            fragmentHomeBinding.shimmerAirpolution.visibility = View.GONE
+            fragmentHomeBinding.lyAirpolution.visibility = View.VISIBLE
+
+          
