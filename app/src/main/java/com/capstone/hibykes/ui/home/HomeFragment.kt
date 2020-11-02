@@ -132,4 +132,8 @@ class HomeFragment : Fragment() {
                         in 101..150 -> {
                             tvAqiIndex.text = StringBuilder("AQI : $aqi")
                             tvAqiLevel.text = StringBuilder("Unhealthy for sensitive")
-                            imgAqi.setImageResource(R.drawable.img
+                            imgAqi.setImageResource(R.drawable.img_aqi_sensitive)
+                        }
+                        in 151..200 -> {
+                            tvAqiIndex.text = StringBuilder("AQI : $aqi")
+  
