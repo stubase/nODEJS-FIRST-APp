@@ -153,4 +153,9 @@ class HomeFragment : Fragment() {
                 }
             }
         })
-  
+    }
+
+    override fun onResume() {
+        super.onResume()
+        fragmentHomeBinding.shimmerRvStation.startShimmer()
+        fragmentHomeBinding.shimmerCi
