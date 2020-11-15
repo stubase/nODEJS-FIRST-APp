@@ -158,4 +158,6 @@ class HomeFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         fragmentHomeBinding.shimmerRvStation.startShimmer()
-        fragmentHomeBinding.shimmerCi
+        fragmentHomeBinding.shimmerCityName.startShimmer()
+        fragmentHomeBinding.shimmerWeather.startShimmer()
+        fragmentHomeBinding.shimmerAirpolution.sta
