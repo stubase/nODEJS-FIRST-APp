@@ -166,4 +166,6 @@ class HomeFragment : Fragment() {
     override fun onPause() {
         super.onPause()
         fragmentHomeBinding.shimmerRvStation.stopShimmer()
-        fragmentHomeBi
+        fragmentHomeBinding.shimmerCityName.stopShimmer()
+        fragmentHomeBinding.shimmerWeather.stopShimmer()
+        fragmentHomeBinding.shimmerAirpolutio
