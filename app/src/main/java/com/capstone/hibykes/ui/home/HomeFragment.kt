@@ -160,4 +160,10 @@ class HomeFragment : Fragment() {
         fragmentHomeBinding.shimmerRvStation.startShimmer()
         fragmentHomeBinding.shimmerCityName.startShimmer()
         fragmentHomeBinding.shimmerWeather.startShimmer()
-        fragmentHomeBinding.shimmerAirpolution.sta
+        fragmentHomeBinding.shimmerAirpolution.startShimmer()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        fragmentHomeBinding.shimmerRvStation.stopShimmer()
+        fragmentHomeBi
