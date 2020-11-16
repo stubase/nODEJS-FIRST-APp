@@ -168,4 +168,6 @@ class HomeFragment : Fragment() {
         fragmentHomeBinding.shimmerRvStation.stopShimmer()
         fragmentHomeBinding.shimmerCityName.stopShimmer()
         fragmentHomeBinding.shimmerWeather.stopShimmer()
-        fragmentHomeBinding.shimmerAirpolutio
+        fragmentHomeBinding.shimmerAirpolution.stopShimmer()
+    }
+}
