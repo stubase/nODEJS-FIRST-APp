@@ -7,4 +7,6 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.capstone.hibykes.R
 import com.capstone.hibykes.data.local.entity.StationEntity
-import com.capstone.hibykes.databinding.I
+import com.capstone.hibykes.databinding.ItemStationsBinding
+
+class StationAdapter(private val listStations: List<StationEntity>) : RecyclerView.Adapter<StationAdapter.
