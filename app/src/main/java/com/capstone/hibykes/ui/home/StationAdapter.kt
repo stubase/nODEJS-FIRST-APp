@@ -9,4 +9,8 @@ import com.capstone.hibykes.R
 import com.capstone.hibykes.data.local.entity.StationEntity
 import com.capstone.hibykes.databinding.ItemStationsBinding
 
-class StationAdapter(private val listStations: List<StationEntity>) : RecyclerView.Adapter<StationAdapter.
+class StationAdapter(private val listStations: List<StationEntity>) : RecyclerView.Adapter<StationAdapter.StationViewHolder>() {
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    interface OnItemClickCallback {
+        fun onItemClicked
