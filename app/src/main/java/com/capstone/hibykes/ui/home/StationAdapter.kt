@@ -13,4 +13,8 @@ class StationAdapter(private val listStations: List<StationEntity>) : RecyclerVi
     private lateinit var onItemClickCallback: OnItemClickCallback
 
     interface OnItemClickCallback {
-        fun onItemClicked
+        fun onItemClicked(data: StationEntity)
+    }
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback =
