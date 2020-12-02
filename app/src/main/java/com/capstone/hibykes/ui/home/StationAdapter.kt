@@ -21,4 +21,7 @@ class StationAdapter(private val listStations: List<StationEntity>) : RecyclerVi
     }
 
     class StationViewHolder(private val binding: ItemStationsBinding) : RecyclerView.ViewHolder(binding.root) {
-    
+        fun bind(station: StationEntity) {
+            with(binding) {
+                tvItemName.text = station.name
+                tvItemDesc.text = statio
