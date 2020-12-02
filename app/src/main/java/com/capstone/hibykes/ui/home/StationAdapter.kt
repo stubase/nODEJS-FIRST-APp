@@ -27,4 +27,9 @@ class StationAdapter(private val listStations: List<StationEntity>) : RecyclerVi
                 tvItemDesc.text = station.description
                 Glide.with(itemView.context)
                         .load(station.image)
-                        .apply(RequestOption
+                        .apply(RequestOptions.placeholderOf(R.drawable.ic_loading).error(R.drawable.ic_error))
+                        .into(imgItemPhoto)
+
+            }
+        }
+    }
