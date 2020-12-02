@@ -39,4 +39,6 @@ class StationAdapter(private val listStations: List<StationEntity>) : RecyclerVi
         return StationViewHolder(itemStationsBinding)
     }
 
-    ove
+    override fun onBindViewHolder(holder: StationViewHolder, position: Int) {
+        val station = listStations[position]
+        holder.bind(statio
