@@ -24,4 +24,7 @@ class StationAdapter(private val listStations: List<StationEntity>) : RecyclerVi
         fun bind(station: StationEntity) {
             with(binding) {
                 tvItemName.text = station.name
-                tvItemDesc.text = statio
+                tvItemDesc.text = station.description
+                Glide.with(itemView.context)
+                        .load(station.image)
+                        .apply(RequestOption
