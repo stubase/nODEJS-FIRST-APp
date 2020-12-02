@@ -33,3 +33,6 @@ class StationAdapter(private val listStations: List<StationEntity>) : RecyclerVi
             }
         }
     }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StationViewHolder {
+        val itemStationsBinding = ItemStationsBinding.i
