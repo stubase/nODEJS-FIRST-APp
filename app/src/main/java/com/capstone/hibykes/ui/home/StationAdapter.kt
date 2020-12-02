@@ -17,4 +17,8 @@ class StationAdapter(private val listStations: List<StationEntity>) : RecyclerVi
     }
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
-        this.onItemClickCallback =
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+    class StationViewHolder(private val binding: ItemStationsBinding) : RecyclerView.ViewHolder(binding.root) {
+    
