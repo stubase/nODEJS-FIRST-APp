@@ -35,4 +35,8 @@ class StationAdapter(private val listStations: List<StationEntity>) : RecyclerVi
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StationViewHolder {
-        val itemStationsBinding = ItemStationsBinding.i
+        val itemStationsBinding = ItemStationsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return StationViewHolder(itemStationsBinding)
+    }
+
+    ove
