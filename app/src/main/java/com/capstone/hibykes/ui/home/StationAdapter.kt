@@ -45,4 +45,7 @@ class StationAdapter(private val listStations: List<StationEntity>) : RecyclerVi
         holder.itemView.setOnClickListener {
             onItemClickCallback.onItemClicked(listStations[holder.adapterPosition])
         }
-    
+    }
+
+    override fun getItemCount(): Int = listStations.size
+}
