@@ -12,4 +12,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.hibykes.R
-import com.capstone.hibykes.data.local.entity.Statio
+import com.capstone.hibykes.data.local.entity.StationEntity
+import com.capstone.hibykes.databinding.ActivityListStationBinding
+import com.capstone.hibykes.ui.MainActivity
+import com.capstone.h
