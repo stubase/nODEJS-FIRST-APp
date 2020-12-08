@@ -9,4 +9,7 @@ import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
-import androidx.lifecycle.ViewModelProv
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.capstone.hibykes.R
+import com.capstone.hibykes.data.local.entity.Statio
