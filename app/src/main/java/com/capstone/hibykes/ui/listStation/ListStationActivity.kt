@@ -20,4 +20,7 @@ import com.capstone.hibykes.viewmodel.ViewModelFactory
 import java.util.*
 import kotlin.collections.ArrayList
 
-class List
+class ListStationActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityListStationBinding
+    private lateinit var stationAdapter: ListStationAda
