@@ -15,4 +15,9 @@ import com.capstone.hibykes.R
 import com.capstone.hibykes.data.local.entity.StationEntity
 import com.capstone.hibykes.databinding.ActivityListStationBinding
 import com.capstone.hibykes.ui.MainActivity
-import com.capstone.h
+import com.capstone.hibykes.ui.station.StationActivity
+import com.capstone.hibykes.viewmodel.ViewModelFactory
+import java.util.*
+import kotlin.collections.ArrayList
+
+class List
