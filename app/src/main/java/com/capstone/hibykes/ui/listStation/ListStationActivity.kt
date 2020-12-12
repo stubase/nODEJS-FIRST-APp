@@ -23,4 +23,8 @@ import kotlin.collections.ArrayList
 class ListStationActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityListStationBinding
-    private lateinit var stationAdapter: ListStationAda
+    private lateinit var stationAdapter: ListStationAdapter
+    private lateinit var viewModel: ListStationViewModel
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super
