@@ -27,4 +27,8 @@ class ListStationActivity : AppCompatActivity() {
     private lateinit var viewModel: ListStationViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super
+        super.onCreate(savedInstanceState)
+        binding = ActivityListStationBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        bindi
