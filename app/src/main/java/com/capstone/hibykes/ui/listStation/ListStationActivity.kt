@@ -31,4 +31,6 @@ class ListStationActivity : AppCompatActivity() {
         binding = ActivityListStationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        bindi
+        binding.toolbar.setNavigationIcon(R.drawable.ic_back_white)
+        binding.toolbar.setNavigationOnClickListener {
+            val intent = Intent(this, MainActivit
