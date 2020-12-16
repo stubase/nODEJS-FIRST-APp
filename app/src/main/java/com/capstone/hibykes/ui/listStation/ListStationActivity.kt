@@ -33,4 +33,8 @@ class ListStationActivity : AppCompatActivity() {
 
         binding.toolbar.setNavigationIcon(R.drawable.ic_back_white)
         binding.toolbar.setNavigationOnClickListener {
-            val intent = Intent(this, MainActivit
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATU
