@@ -37,4 +37,6 @@ class ListStationActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATU
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.statusBarColor(ContextCompat.ge
