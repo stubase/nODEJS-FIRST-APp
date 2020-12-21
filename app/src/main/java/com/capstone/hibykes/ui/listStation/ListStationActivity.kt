@@ -42,4 +42,10 @@ class ListStationActivity : AppCompatActivity() {
         window.statusBarColor(ContextCompat.getColor(this, R.color.primary))
 
         val factory = ViewModelFactory.getInstance(this)
-        viewModel = ViewModelProvider(this, factory)[ListStatio
+        viewModel = ViewModelProvider(this, factory)[ListStationViewModel::class.java]
+
+
+        getStations()
+
+        binding.searchList.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+            override
