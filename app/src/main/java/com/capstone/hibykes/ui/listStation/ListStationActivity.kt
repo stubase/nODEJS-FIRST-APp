@@ -48,4 +48,8 @@ class ListStationActivity : AppCompatActivity() {
         getStations()
 
         binding.searchList.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
-            override
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(new
