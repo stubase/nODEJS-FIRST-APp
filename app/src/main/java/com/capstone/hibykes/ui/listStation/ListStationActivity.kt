@@ -52,4 +52,7 @@ class ListStationActivity : AppCompatActivity() {
                 return false
             }
 
-            override fun onQueryTextChange(new
+            override fun onQueryTextChange(newText: String?): Boolean {
+                stationAdapter?.filter.filter(newText)
+                Log.d("search", newText!!)
+                retu
