@@ -55,4 +55,13 @@ class ListStationActivity : AppCompatActivity() {
             override fun onQueryTextChange(newText: String?): Boolean {
                 stationAdapter?.filter.filter(newText)
                 Log.d("search", newText!!)
-                retu
+                return false
+            }
+
+        })
+    }
+
+    private fun getStations() {
+        viewModel.getStationsData().observe(this, {
+
+            stati
