@@ -64,4 +64,8 @@ class ListStationActivity : AppCompatActivity() {
     private fun getStations() {
         viewModel.getStationsData().observe(this, {
 
-            stati
+            stationAdapter = ListStationAdapter(it,this)
+            stationAdapter.notifyDataSetChanged()
+
+            binding.apply {
+                shimme
