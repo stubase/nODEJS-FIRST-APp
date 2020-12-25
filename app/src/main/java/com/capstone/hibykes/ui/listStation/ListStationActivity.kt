@@ -70,4 +70,7 @@ class ListStationActivity : AppCompatActivity() {
             binding.apply {
                 shimmerRvListStation.stopShimmer()
                 shimmerRvListStation.visibility = View.GONE
-                rvStation.visibility = Vie
+                rvStation.visibility = View.VISIBLE
+
+                rvStation.layoutManager = LinearLayoutManager(this@ListStationActivity)
+                rvStation.setHasFixedSize
