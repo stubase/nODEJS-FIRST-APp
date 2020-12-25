@@ -68,4 +68,6 @@ class ListStationActivity : AppCompatActivity() {
             stationAdapter.notifyDataSetChanged()
 
             binding.apply {
-                shimme
+                shimmerRvListStation.stopShimmer()
+                shimmerRvListStation.visibility = View.GONE
+                rvStation.visibility = Vie
