@@ -73,4 +73,7 @@ class ListStationActivity : AppCompatActivity() {
                 rvStation.visibility = View.VISIBLE
 
                 rvStation.layoutManager = LinearLayoutManager(this@ListStationActivity)
-                rvStation.setHasFixedSize
+                rvStation.setHasFixedSize(true)
+                rvStation.adapter = stationAdapter
+            }
+            stationAdapter.setOnItemClickCallback(object : ListSta
