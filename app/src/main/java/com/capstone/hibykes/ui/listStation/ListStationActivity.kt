@@ -76,4 +76,6 @@ class ListStationActivity : AppCompatActivity() {
                 rvStation.setHasFixedSize(true)
                 rvStation.adapter = stationAdapter
             }
-            stationAdapter.setOnItemClickCallback(object : ListSta
+            stationAdapter.setOnItemClickCallback(object : ListStationAdapter.OnItemClickCallback {
+                override fun onItemClicked(data: StationEntity) {
+                    Log.d("station", "station
