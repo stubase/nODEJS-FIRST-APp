@@ -80,4 +80,11 @@ class ListStationActivity : AppCompatActivity() {
                 override fun onItemClicked(data: StationEntity) {
                     Log.d("station", "station === $data")
                     val intent = Intent(this@ListStationActivity, StationActivity::class.java)
-                    intent.putExtra(Stat
+                    intent.putExtra(StationActivity.EXTRA_STATION, data)
+                    startActivity(intent)
+                }
+            })/**/
+        })
+    }
+
+    private fun Window.s
