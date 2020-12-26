@@ -78,4 +78,6 @@ class ListStationActivity : AppCompatActivity() {
             }
             stationAdapter.setOnItemClickCallback(object : ListStationAdapter.OnItemClickCallback {
                 override fun onItemClicked(data: StationEntity) {
-                    Log.d("station", "station
+                    Log.d("station", "station === $data")
+                    val intent = Intent(this@ListStationActivity, StationActivity::class.java)
+                    intent.putExtra(Stat
