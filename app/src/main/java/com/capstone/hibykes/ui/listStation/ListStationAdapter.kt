@@ -21,3 +21,9 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
     init{
         filterList = listStations as ArrayList<StationEntity>
     }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: StationEntity)
+    }
+
+    fun setOnItemClickCallbac
