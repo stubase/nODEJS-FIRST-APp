@@ -12,4 +12,7 @@ import com.capstone.hibykes.R
 import com.capstone.hibykes.data.local.entity.StationEntity
 import com.capstone.hibykes.databinding.ItemListStationBinding
 
-class ListStationAdapter(private val listStations: List<StationEnt
+class ListStationAdapter(private val listStations: List<StationEntity>, val context: Context) : RecyclerView.Adapter<ListStationAdapter.ListStationViewHolder>(),
+    Filterable {
+
+    private lateinit var onItemClickCallback:
