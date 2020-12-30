@@ -15,4 +15,9 @@ import com.capstone.hibykes.databinding.ItemListStationBinding
 class ListStationAdapter(private val listStations: List<StationEntity>, val context: Context) : RecyclerView.Adapter<ListStationAdapter.ListStationViewHolder>(),
     Filterable {
 
-    private lateinit var onItemClickCallback:
+    private lateinit var onItemClickCallback: OnItemClickCallback
+    var filterList = ArrayList<StationEntity>()
+
+    init{
+        filterList = listStations as ArrayList<StationEntity>
+    }
