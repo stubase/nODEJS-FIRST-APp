@@ -9,4 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.capstone.hibykes.R
-import com.capstone.hibykes.data.local.entity.Statio
+import com.capstone.hibykes.data.local.entity.StationEntity
+import com.capstone.hibykes.databinding.ItemListStationBinding
+
+class ListStationAdapter(private val listStations: List<StationEnt
