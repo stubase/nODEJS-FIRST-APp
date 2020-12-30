@@ -87,4 +87,9 @@ class ListStationActivity : AppCompatActivity() {
         })
     }
 
-    private fun Window.s
+    private fun Window.statusBarColor(color: Int) {
+
+    }
+}
+
+
