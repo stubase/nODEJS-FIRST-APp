@@ -30,4 +30,8 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
         this.onItemClickCallback = onItemClickCallback
     }
 
-    class ListStationViewHolder(private val binding: ItemLi
+    class ListStationViewHolder(private val binding: ItemListStationBinding) : RecyclerView.ViewHolder(
+        binding.root
+    ) {
+        fun bind(station: StationEntity) {
+         
