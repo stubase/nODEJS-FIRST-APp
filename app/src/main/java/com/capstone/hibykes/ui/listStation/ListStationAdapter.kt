@@ -26,4 +26,8 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
         fun onItemClicked(data: StationEntity)
     }
 
-    fun setOnItemClickCallbac
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+    class ListStationViewHolder(private val binding: ItemLi
