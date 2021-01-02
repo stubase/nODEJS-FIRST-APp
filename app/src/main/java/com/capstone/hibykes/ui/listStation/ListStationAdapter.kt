@@ -34,4 +34,7 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
         binding.root
     ) {
         fun bind(station: StationEntity) {
-         
+            with(binding) {
+                tvItemName.text = station.name
+                tvItemDesc.text = station.description
+                Glide.with(
