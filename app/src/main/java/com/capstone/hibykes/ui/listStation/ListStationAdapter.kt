@@ -40,4 +40,7 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
                 Glide.with(itemView.context)
                     .load(station.image)
                     .apply(
-                        RequestOptions.placeholderOf(R.drawable.i
+                        RequestOptions.placeholderOf(R.drawable.ic_loading)
+                            .error(R.drawable.ic_error)
+                    )
+                    .into(imgItemPhoto
