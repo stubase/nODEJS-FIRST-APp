@@ -37,4 +37,7 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
             with(binding) {
                 tvItemName.text = station.name
                 tvItemDesc.text = station.description
-                Glide.with(
+                Glide.with(itemView.context)
+                    .load(station.image)
+                    .apply(
+                        RequestOptions.placeholderOf(R.drawable.i
