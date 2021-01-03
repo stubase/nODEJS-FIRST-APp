@@ -43,4 +43,9 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
                         RequestOptions.placeholderOf(R.drawable.ic_loading)
                             .error(R.drawable.ic_error)
                     )
-                    .into(imgItemPhoto
+                    .into(imgItemPhoto)
+            }
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListStationViewHolder
