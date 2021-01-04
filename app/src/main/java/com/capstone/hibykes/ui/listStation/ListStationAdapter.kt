@@ -48,4 +48,9 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListStationViewHolder
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListStationViewHolder {
+        val itemListStationBinding = ItemListStationBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false
+    
