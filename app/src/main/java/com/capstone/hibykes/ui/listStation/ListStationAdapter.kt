@@ -57,4 +57,8 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
         return ListStationViewHolder(itemListStationBinding)
     }
 
-    override fun onBindViewHolder(holder: ListStationViewHolder, position: Int) 
+    override fun onBindViewHolder(holder: ListStationViewHolder, position: Int) {
+        val station = filterList[position]
+        holder.bind(station)
+        holder.itemView.setOnClickListener {
+            onItemClickCa
