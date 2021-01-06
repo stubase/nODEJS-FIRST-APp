@@ -53,4 +53,8 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
             LayoutInflater.from(parent.context),
             parent,
             false
-    
+        )
+        return ListStationViewHolder(itemListStationBinding)
+    }
+
+    override fun onBindViewHolder(holder: ListStationViewHolder, position: Int) 
