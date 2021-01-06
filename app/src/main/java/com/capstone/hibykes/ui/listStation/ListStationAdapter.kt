@@ -61,4 +61,10 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
         val station = filterList[position]
         holder.bind(station)
         holder.itemView.setOnClickListener {
-            onItemClickCa
+            onItemClickCallback.onItemClicked(filterList[holder.adapterPosition])
+        }
+    }
+
+    override fun getItemCount(): Int = filterList.size
+
+    override fun getF
