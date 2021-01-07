@@ -67,4 +67,9 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
 
     override fun getItemCount(): Int = filterList.size
 
-    override fun getF
+    override fun getFilter(): Filter {
+        return customFilter;
+    }
+
+    private val customFilter = object: Filter(){
+        override fun performFilterin
