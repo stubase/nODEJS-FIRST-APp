@@ -72,4 +72,7 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
     }
 
     private val customFilter = object: Filter(){
-        override fun performFilterin
+        override fun performFiltering(constraint: CharSequence?): FilterResults {
+            val charSearch = constraint.toString()
+            if(charSearch.isEmpty()){
+     
