@@ -75,4 +75,7 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
         override fun performFiltering(constraint: CharSequence?): FilterResults {
             val charSearch = constraint.toString()
             if(charSearch.isEmpty()){
-     
+                filterList = listStations as ArrayList<StationEntity>
+            }else{
+                val resultList = ArrayList<StationEntity>()
+  
