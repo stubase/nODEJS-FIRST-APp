@@ -80,4 +80,9 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
                 val resultList = ArrayList<StationEntity>()
                 for(row in listStations){
                     if(row.name!!.toLowerCase().contains(constraint.toString().toLowerCase())){
-                
+                        resultList.add(row)
+                    }
+                }
+                filterList = resultList
+            }
+            v
