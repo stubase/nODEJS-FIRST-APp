@@ -85,4 +85,9 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
                 }
                 filterList = resultList
             }
-            v
+            val results = FilterResults()
+            results.values = filterList
+            return results
+        }
+
+        override fun publishResults(co
