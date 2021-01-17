@@ -91,4 +91,8 @@ class ListStationAdapter(private val listStations: List<StationEntity>, val cont
         }
 
         override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
-            filterList = results?.values as ArrayList<StationEntit
+            filterList = results?.values as ArrayList<StationEntity>
+            notifyDataSetChanged()
+        }
+    }
+}
