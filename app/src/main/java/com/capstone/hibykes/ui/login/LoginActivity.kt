@@ -10,4 +10,8 @@ import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.To
+import android.widget.Toast
+import com.airbnb.lottie.LottieAnimationView
+import com.capstone.hibykes.R
+import com.capstone.hibykes.databinding.ActivityLoginBinding
+i
