@@ -14,4 +14,6 @@ import android.widget.Toast
 import com.airbnb.lottie.LottieAnimationView
 import com.capstone.hibykes.R
 import com.capstone.hibykes.databinding.ActivityLoginBinding
-i
+import com.capstone.hibykes.ui.MainActivity
+import com.capstone.hibykes.ui.register.RegisterActivity
+import com.google.firebase.auth.Fire
