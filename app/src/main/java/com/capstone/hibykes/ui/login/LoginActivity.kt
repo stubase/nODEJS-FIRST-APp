@@ -20,3 +20,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+
+class LoginActivity : AppCompatActivity(), View.OnClickListener {
+    private lateinit var binding: ActivityLoginBinding
+    private lateinit var auth: FirebaseAuth
