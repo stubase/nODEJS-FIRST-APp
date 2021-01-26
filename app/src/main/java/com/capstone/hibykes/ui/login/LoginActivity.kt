@@ -16,4 +16,7 @@ import com.capstone.hibykes.R
 import com.capstone.hibykes.databinding.ActivityLoginBinding
 import com.capstone.hibykes.ui.MainActivity
 import com.capstone.hibykes.ui.register.RegisterActivity
-import com.google.firebase.auth.Fire
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
