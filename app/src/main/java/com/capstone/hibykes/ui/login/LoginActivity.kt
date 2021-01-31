@@ -34,4 +34,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
         dialog = Dialog(this)
 
- 
+        auth = Firebase.auth
+
+        binding.btnRegister.setOnClickListener(this)
+        binding.btnLogin.setOnClickListener(this)
+    }
+
+    public override
