@@ -46,4 +46,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         updateUI(currentUser)
     }
 
-    private fun upd
+    private fun updateUI(currentUser: FirebaseUser?) {
+        if (currentUser != null) {
+            if (currentUser.isEmailVerified) {
+                star
