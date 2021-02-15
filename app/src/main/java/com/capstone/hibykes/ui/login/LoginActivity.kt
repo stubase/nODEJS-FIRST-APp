@@ -52,4 +52,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             } else {
-                val message = "Please check your
+                val message = "Please check your email to verify!"
+                showAlert(true,message)
+            }
+        } else Toast.makeText(baseContext, "Please Sign In", To
