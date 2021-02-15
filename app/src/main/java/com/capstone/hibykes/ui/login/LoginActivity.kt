@@ -49,4 +49,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
             if (currentUser.isEmailVerified) {
-                star
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            } else {
+                val message = "Please check your
