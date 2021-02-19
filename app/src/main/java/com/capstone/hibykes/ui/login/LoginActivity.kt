@@ -55,4 +55,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 val message = "Please check your email to verify!"
                 showAlert(true,message)
             }
-        } else Toast.makeText(baseContext, "Please Sign In", To
+        } else Toast.makeText(baseContext, "Please Sign In", Toast.LENGTH_SHORT).show()
+    }
+
+    private fun showAlert(check: Boolean, message: String) {
+        dialog.setContentView(R.layout.dialog_al
