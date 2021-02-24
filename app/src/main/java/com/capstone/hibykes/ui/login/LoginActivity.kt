@@ -62,4 +62,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         dialog.setContentView(R.layout.dialog_alert)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
-        val tvMessage = dialog.findViewById(R.id.tv_m
+        val tvMessage = dialog.findViewById(R.id.tv_message) as TextView
+        tvMessage.text = message
+
+        val btnClose = dialog.findViewById(R.id.iv_close) as ImageView
+        btnClose.setOnCli
