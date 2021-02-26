@@ -76,3 +76,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             lottie.setAnimation("failed.json")
         }else{
             lottie.setAnimation("email_confirmation.json")
+        }
+        dialog.show()
+    }
+
+    override fun onClick(v: View) {
+        when (v.id) {
+            R.id.btn_regis
