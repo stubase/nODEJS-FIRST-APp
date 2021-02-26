@@ -72,3 +72,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
         val lottie = dialog.findViewById(R.id.lottie_dialog) as LottieAnimationView
 
+        if(!check){
+            lottie.setAnimation("failed.json")
+        }else{
+            lottie.setAnimation("email_confirmation.json")
