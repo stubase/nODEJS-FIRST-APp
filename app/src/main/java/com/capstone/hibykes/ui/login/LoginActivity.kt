@@ -82,4 +82,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.btn_regis
+            R.id.btn_register -> {
+                startActivity(Intent(this, RegisterActivity::class.java))
+                finish()
+            }
+            R.id.bt
