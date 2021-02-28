@@ -86,4 +86,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(Intent(this, RegisterActivity::class.java))
                 finish()
             }
-            R.id.bt
+            R.id.btn_login -> doLogin()
+        }
+    }
+
+    private fun doLogin() {
+        val email = binding.etEmail.text.toString()
+        val password = binding.e
