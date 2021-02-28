@@ -92,4 +92,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun doLogin() {
         val email = binding.etEmail.text.toString()
-        val password = binding.e
+        val password = binding.etPassword.text.toString()
+        binding.apply {
+            if (email.isEmpty()) {
+                etEmail.error = "Please enter 
