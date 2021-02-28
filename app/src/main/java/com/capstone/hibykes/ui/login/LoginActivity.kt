@@ -95,4 +95,9 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         val password = binding.etPassword.text.toString()
         binding.apply {
             if (email.isEmpty()) {
-                etEmail.error = "Please enter 
+                etEmail.error = "Please enter Username!"
+                etEmail.requestFocus()
+                return
+            }
+            if (password.isEmpty()) {
+                etPassword.er
