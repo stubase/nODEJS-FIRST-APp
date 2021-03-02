@@ -100,4 +100,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 return
             }
             if (password.isEmpty()) {
-                etPassword.er
+                etPassword.error = "Please enter Password!"
+                etPassword.requestFocus()
+                return
+            }
+        }
+
+        auth.signInWith
