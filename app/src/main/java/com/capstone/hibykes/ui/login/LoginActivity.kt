@@ -106,4 +106,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
 
-        auth.signInWith
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+            
