@@ -109,4 +109,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-            
+                    val user = auth.currentUser
+                    updateUI(user)
+                } else {
+                    Log.w("Login", "
