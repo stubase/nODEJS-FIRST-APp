@@ -114,4 +114,5 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                 } else {
                     Log.w("Login", "signInWithEmail:failure", task.exception)
                     val message = "Authentication failed."
-                
+                    showAlert(false,message)
+//                    Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
