@@ -112,4 +112,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                     val user = auth.currentUser
                     updateUI(user)
                 } else {
-                    Log.w("Login", "
+                    Log.w("Login", "signInWithEmail:failure", task.exception)
+                    val message = "Authentication failed."
+                
