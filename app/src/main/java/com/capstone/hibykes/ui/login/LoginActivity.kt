@@ -116,3 +116,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                     val message = "Authentication failed."
                     showAlert(false,message)
 //                    Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
+                    updateUI(null)
+                }
+            }
+    }
+}
