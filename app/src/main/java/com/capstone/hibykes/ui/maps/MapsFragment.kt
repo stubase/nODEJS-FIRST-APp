@@ -30,3 +30,7 @@ import com.google.firebase.ktx.Firebase
 import java.util.*
 
 @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "RECEIVER_NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS", "CAST_NEVER_SUCCEEDS")
+class MapsFragment : Fragment(), OnMapReadyCallback {
+
+    private lateinit var fragmentMapsBinding: FragmentMapsBinding
+    private lateinit var vi
