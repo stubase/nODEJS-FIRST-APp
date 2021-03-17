@@ -33,4 +33,7 @@ import java.util.*
 class MapsFragment : Fragment(), OnMapReadyCallback {
 
     private lateinit var fragmentMapsBinding: FragmentMapsBinding
-    private lateinit var vi
+    private lateinit var viewModel: MapsViewModel
+    private lateinit var mMap: GoogleMap
+    private lateinit var currentLocation: Location
+    private 
