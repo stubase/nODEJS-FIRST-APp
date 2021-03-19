@@ -36,4 +36,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     private lateinit var viewModel: MapsViewModel
     private lateinit var mMap: GoogleMap
     private lateinit var currentLocation: Location
-    private 
+    private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
+    private val permissionCode = 101
+    var markerMap = HashMap<Str
