@@ -42,4 +42,9 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        fragmentMapsBinding = FragmentMapsBinding.inflate(layoutInflater, container, fal
+        fragmentMapsBinding = FragmentMapsBinding.inflate(layoutInflater, container, false)
+        return fragmentMapsBinding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onV
