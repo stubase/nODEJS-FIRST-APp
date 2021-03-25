@@ -38,4 +38,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     private lateinit var currentLocation: Location
     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
     private val permissionCode = 101
-    var markerMap = HashMap<Str
+    var markerMap = HashMap<String, String>()
+    private lateinit var auth: FirebaseAuth
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup
