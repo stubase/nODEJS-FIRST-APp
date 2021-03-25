@@ -41,4 +41,5 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     var markerMap = HashMap<String, String>()
     private lateinit var auth: FirebaseAuth
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        fragmentMapsBinding = FragmentMapsBinding.inflate(layoutInflater, container, fal
