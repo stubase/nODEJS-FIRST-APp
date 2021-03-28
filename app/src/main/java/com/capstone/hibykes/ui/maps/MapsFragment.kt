@@ -50,4 +50,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         super.onViewCreated(view, savedInstanceState)
 
         val factory = ViewModelFactory.getInstance(requireActivity())
-        viewModel = ViewModelProvider(th
+        viewModel = ViewModelProvider(this, factory)[MapsViewModel::class.java]
+
+        val mapFragment = childFragmentManager.findFragmentById((R.id.map)) as SupportMapFragmen
