@@ -52,4 +52,9 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         val factory = ViewModelFactory.getInstance(requireActivity())
         viewModel = ViewModelProvider(this, factory)[MapsViewModel::class.java]
 
-        val mapFragment = childFragmentManager.findFragmentById((R.id.map)) as SupportMapFragmen
+        val mapFragment = childFragmentManager.findFragmentById((R.id.map)) as SupportMapFragment
+        mapFragment.getMapAsync(this)
+
+        fusedLocationProviderClient =  LocationServices.getFusedLocationProviderClient(requireContext())
+
+        a
