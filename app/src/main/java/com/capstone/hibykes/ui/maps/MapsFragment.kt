@@ -57,4 +57,9 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
 
         fusedLocationProviderClient =  LocationServices.getFusedLocationProviderClient(requireContext())
 
-        a
+        auth = Firebase.auth
+        val name = auth.currentUser?.displayName
+        fragmentMapsBinding.tvHi.text = getString(R.string.hai, name)
+    }
+
+    priv
