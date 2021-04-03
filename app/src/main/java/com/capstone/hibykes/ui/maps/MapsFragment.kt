@@ -62,4 +62,5 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         fragmentMapsBinding.tvHi.text = getString(R.string.hai, name)
     }
 
-    priv
+    private fun fetchLocation(){
+        if (ActivityCompat.checkSelfPermission(requireActivity(), Manifest.permission.ACCESS_FINE_LOCATION
