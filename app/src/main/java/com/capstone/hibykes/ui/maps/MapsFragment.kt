@@ -63,4 +63,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     }
 
     private fun fetchLocation(){
-        if (ActivityCompat.checkSelfPermission(requireActivity(), Manifest.permission.ACCESS_FINE_LOCATION
+        if (ActivityCompat.checkSelfPermission(requireActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED && context?.let {
+                ActivityCompat.checkSelfPermission(it, Manife
