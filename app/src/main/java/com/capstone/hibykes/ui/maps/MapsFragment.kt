@@ -70,4 +70,8 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
             ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), permissionCode)
             return
         }
-        fusedLocationProviderClient.lastLoca
+        fusedLocationProviderClient.lastLocation
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String?>, grantResults: IntArray) {
+     
