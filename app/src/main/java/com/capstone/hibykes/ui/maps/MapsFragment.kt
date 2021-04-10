@@ -67,4 +67,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
             != PackageManager.PERMISSION_GRANTED && context?.let {
                 ActivityCompat.checkSelfPermission(it, Manifest.permission.ACCESS_COARSE_LOCATION)
             } != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermis
+            ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), permissionCode)
+            return
+        }
+        fusedLocationProviderClient.lastLoca
