@@ -84,4 +84,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-     
+        val boundsBuilder = LatLngBounds.Builder()
+        viewModel.getStationsData().observe(viewLifecycleOwner, {
+            for (station in it) 
