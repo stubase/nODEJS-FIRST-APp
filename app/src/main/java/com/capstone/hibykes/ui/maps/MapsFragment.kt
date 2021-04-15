@@ -90,4 +90,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                 val latLngStation = LatLng(station.latitude?.toDouble()!!, station.longitude?.toDouble()!!)
                 boundsBuilder.include(latLngStation)
                 val stationMarker = mMap.addMarker(MarkerOptions()
-                        .position(latLngStation
+                        .position(latLngStation)
+                        .title(station.name)
+                        .snippet(station.description)
+                        .icon(BitmapDescriptorFact
