@@ -86,4 +86,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
 
         val boundsBuilder = LatLngBounds.Builder()
         viewModel.getStationsData().observe(viewLifecycleOwner, {
-            for (station in it) 
+            for (station in it) {
+                val latLngStation = LatLng(station.latitude?.toDouble()!!, station.longitude?.toDouble()!!)
+                boundsBuild
