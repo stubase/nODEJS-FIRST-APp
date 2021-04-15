@@ -88,4 +88,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         viewModel.getStationsData().observe(viewLifecycleOwner, {
             for (station in it) {
                 val latLngStation = LatLng(station.latitude?.toDouble()!!, station.longitude?.toDouble()!!)
-                boundsBuild
+                boundsBuilder.include(latLngStation)
+                val stationMarker = mMap.addMarker(MarkerOptions()
+                        .position(latLngStation
