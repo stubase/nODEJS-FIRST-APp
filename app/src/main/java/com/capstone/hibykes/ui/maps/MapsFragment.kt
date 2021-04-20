@@ -93,4 +93,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                         .position(latLngStation)
                         .title(station.name)
                         .snippet(station.description)
-                        .icon(BitmapDescriptorFact
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
+                )
+                val stationMarkerId = stationMarker.id
+                m
