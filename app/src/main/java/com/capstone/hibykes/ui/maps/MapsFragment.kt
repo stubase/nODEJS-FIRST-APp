@@ -101,4 +101,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                 mMap.setOnInfoWindowClickListener { marker ->
                     val data = markerMap[marker.id]
                     var dataObject: StationEntity
-                    viewModel.getStationsData().observe(viewLifecycleOwne
+                    viewModel.getStationsData().observe(viewLifecycleOwner, {stationOnMarker ->
+                        for (item in stationOnMarker) {
+                            if (item.toString() == data
