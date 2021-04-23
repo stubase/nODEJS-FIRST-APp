@@ -96,4 +96,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 )
                 val stationMarkerId = stationMarker.id
-                m
+                markerMap[stationMarkerId] = station.toString()
+
+                mMap.setOnInfoWindowClickListener { marker ->
+                    val data 
