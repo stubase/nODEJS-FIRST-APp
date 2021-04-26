@@ -103,4 +103,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                     var dataObject: StationEntity
                     viewModel.getStationsData().observe(viewLifecycleOwner, {stationOnMarker ->
                         for (item in stationOnMarker) {
-                            if (item.toString() == data
+                            if (item.toString() == data) {
+                                dataObject = item
+                                val intent =  Intent(context, StationActivity::class.java
