@@ -105,4 +105,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                         for (item in stationOnMarker) {
                             if (item.toString() == data) {
                                 dataObject = item
-                                val intent =  Intent(context, StationActivity::class.java
+                                val intent =  Intent(context, StationActivity::class.java)
+                                intent.putExtra(StationActivity.EXTRA_STATION, dataObject)
+                                startActivity(in
