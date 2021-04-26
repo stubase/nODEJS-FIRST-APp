@@ -112,4 +112,8 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                         }
                     })
                 }
-                mMap.moveCamera(CameraUpdateFactor
+                mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(boundsBuilder.build(), 1000, 1000, 0))
+            }
+        })
+
+        if (ActivityCompat.checkSelfPermission(re
