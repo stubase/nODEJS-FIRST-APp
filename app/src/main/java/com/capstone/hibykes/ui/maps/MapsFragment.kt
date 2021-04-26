@@ -107,4 +107,9 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                                 dataObject = item
                                 val intent =  Intent(context, StationActivity::class.java)
                                 intent.putExtra(StationActivity.EXTRA_STATION, dataObject)
-                                startActivity(in
+                                startActivity(intent)
+                            }
+                        }
+                    })
+                }
+                mMap.moveCamera(CameraUpdateFactor
