@@ -116,4 +116,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
             }
         })
 
-        if (ActivityCompat.checkSelfPermission(re
+        if (ActivityCompat.checkSelfPermission(requireActivity(), Manifest.permission.ACCESS_FINE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED && context?.let {
+        
