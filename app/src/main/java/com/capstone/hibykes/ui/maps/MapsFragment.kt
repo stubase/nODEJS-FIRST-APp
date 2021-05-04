@@ -125,4 +125,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         }
         val task = fusedLocationProviderClient.lastLocation
         task.addOnSuccessListener { location ->
-    
+            if (location != null) {
+                currentLocation = location
+                val latLngLocation = LatLng(currentLocation.latitude, cu
