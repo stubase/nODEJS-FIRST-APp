@@ -127,4 +127,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         task.addOnSuccessListener { location ->
             if (location != null) {
                 currentLocation = location
-                val latLngLocation = LatLng(currentLocation.latitude, cu
+                val latLngLocation = LatLng(currentLocation.latitude, currentLocation.longitude)
+                val latLng = LatLng(currentLocation.latitude, currentLocation.longitude)
+                mMap.addMarker(MarkerOption
