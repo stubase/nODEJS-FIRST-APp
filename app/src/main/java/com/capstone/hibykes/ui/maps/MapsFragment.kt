@@ -136,4 +136,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         }
     }
 
-    private fun getCityName(lat: Double, long: Do
+    private fun getCityName(lat: Double, long: Double):String{
+        var cityName = ""
+        var countryName = ""
+        val geoCoder = Geocoder(requireContext(), Locale.getDef
