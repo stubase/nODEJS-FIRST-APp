@@ -131,4 +131,9 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                 val latLng = LatLng(currentLocation.latitude, currentLocation.longitude)
                 mMap.addMarker(MarkerOptions().position(latLngLocation).title("My Location"))
                 mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng))
-                mMap.
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 5f))
+            }
+        }
+    }
+
+    private fun getCityName(lat: Double, long: Do
