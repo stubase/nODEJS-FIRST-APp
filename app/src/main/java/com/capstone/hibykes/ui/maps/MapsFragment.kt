@@ -129,4 +129,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
                 currentLocation = location
                 val latLngLocation = LatLng(currentLocation.latitude, currentLocation.longitude)
                 val latLng = LatLng(currentLocation.latitude, currentLocation.longitude)
-                mMap.addMarker(MarkerOption
+                mMap.addMarker(MarkerOptions().position(latLngLocation).title("My Location"))
+                mMap.animateCamera(CameraUpdateFactory.newLatLng(latLng))
+                mMap.
