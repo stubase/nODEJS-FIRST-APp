@@ -143,4 +143,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
         val address = geoCoder.getFromLocation(lat, long, 3)
 
         cityName = address[0].getAddressLine(0)
-        countryName 
+        countryName = address[0].countryName
+        return cityName
+    }
+}
