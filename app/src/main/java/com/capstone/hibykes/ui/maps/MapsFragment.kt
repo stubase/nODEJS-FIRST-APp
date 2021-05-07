@@ -139,4 +139,8 @@ class MapsFragment : Fragment(), OnMapReadyCallback {
     private fun getCityName(lat: Double, long: Double):String{
         var cityName = ""
         var countryName = ""
-        val geoCoder = Geocoder(requireContext(), Locale.getDef
+        val geoCoder = Geocoder(requireContext(), Locale.getDefault())
+        val address = geoCoder.getFromLocation(lat, long, 3)
+
+        cityName = address[0].getAddressLine(0)
+        countryName 
