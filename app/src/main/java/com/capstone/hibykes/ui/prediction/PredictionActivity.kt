@@ -73,3 +73,28 @@ class PredictionActivity : AppCompatActivity(), View.OnClickListener {
         when (v.id) {
             R.id.btn_save_bookmark -> {
                 viewModel.insertBookmark(prediction)
+                Toast.makeText(baseContext, "Added prediction to bookmark time", Toast.LENGTH_SHORT).show()
+                checkBookmark()
+            }
+            R.id.btn_remove_bookmark -> {
+                viewModel.deleteFromBookmark(prediction.id)
+                Toast.makeText(baseContext, "Removed prediction from bookmark time", Toast.LENGTH_SHORT).show()
+                checkBookmark()
+            }
+        }
+    }
+
+    private fun setBookmarkState(count : Int?) {
+        if (count != null ) {
+            if (count > 0) {
+                binding.btnSaveBookmark.visibility = GONE
+                binding.btnRemoveBookmark.visibility = VISIBLE
+                statusBookmark = true
+            } else {
+                binding.btnSaveBookmark.visibility = VISIBLE
+                binding.btnRemoveBookmark.visibility = GONE
+                statusBookmark = false
+            }
+        }
+    }
+}
