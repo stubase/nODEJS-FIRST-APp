@@ -7,4 +7,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class PredictionViewModel(private val hiBykesRepositories: HiBykesRepositories) : ViewModel() 
+class PredictionViewModel(private val hiBykesRepositories: HiBykesRepositories) : ViewModel() {
+    fun insertBookmark(prediction: PredictionEntity) {
+        return hiBykesRepositories.insertBookmark(prediction)
+    }
+
+    suspend fun check
