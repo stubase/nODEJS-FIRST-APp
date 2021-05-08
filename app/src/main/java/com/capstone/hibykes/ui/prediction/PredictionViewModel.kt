@@ -12,4 +12,9 @@ class PredictionViewModel(private val hiBykesRepositories: HiBykesRepositories) 
         return hiBykesRepositories.insertBookmark(prediction)
     }
 
-    suspend fun check
+    suspend fun checkBookmark(id: String): Int {
+        return hiBykesRepositories.checkBookmark(id)
+    }
+
+    fun deleteFromBookmark(id: String) {
+        CoroutineScope(D
