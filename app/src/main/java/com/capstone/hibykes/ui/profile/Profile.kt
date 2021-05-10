@@ -17,3 +17,20 @@ class Profile : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityProfileBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        auth = Firebase.auth
+        val name = auth.currentUser?.displayName
+        val email = auth.currentUser?.email
+        binding.tvName.text = name
+        binding.tvEmail.text = email
+
+        binding.toolbar.setNavigationIcon(R.drawable.ic_back_white)
+        binding.toolbar.setNavigationOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+    }
+}
