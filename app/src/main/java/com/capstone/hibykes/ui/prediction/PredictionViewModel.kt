@@ -17,4 +17,8 @@ class PredictionViewModel(private val hiBykesRepositories: HiBykesRepositories) 
     }
 
     fun deleteFromBookmark(id: String) {
-        CoroutineScope(D
+        CoroutineScope(Dispatchers.IO).launch {
+            return@launch hiBykesRepositories.deleteFromBookmark(id)
+        }
+    }
+}
