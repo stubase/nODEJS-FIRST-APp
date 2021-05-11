@@ -11,4 +11,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import com.a
+import com.airbnb.lottie.LottieAnimationView
+import com.capstone.hibykes.R
+import com.capstone.hibykes.databinding.ActivityRegisterBinding
+import com.capstone.hibykes.ui
