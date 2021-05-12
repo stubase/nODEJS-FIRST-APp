@@ -17,4 +17,8 @@ import com.capstone.hibykes.databinding.ActivityRegisterBinding
 import com.capstone.hibykes.ui.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest
-import c
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+
+class RegisterActivity : AppCompatActivity(), View.OnClickListener {
+    private la
