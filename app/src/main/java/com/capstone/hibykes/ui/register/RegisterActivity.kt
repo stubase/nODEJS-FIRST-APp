@@ -28,4 +28,10 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
-        setContentView(bindi
+        setContentView(binding.root)
+        supportActionBar?.hide()
+
+        auth = Firebase.auth
+
+        binding.btnRegister.setOnClickListener(this)
+        binding.btnLogin.setOnC
