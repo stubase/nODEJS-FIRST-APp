@@ -21,4 +21,8 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class RegisterActivity : AppCompatActivity(), View.OnClickListener {
-    private la
+    private lateinit var auth: FirebaseAuth
+    private lateinit var binding: ActivityRegisterBinding
+    private lateinit var dialog: Dialog
+
+    override fun onCr
