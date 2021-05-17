@@ -53,4 +53,8 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         val confirmPassword = binding.etConfirmPassword.text.toString()
         binding.apply {
 
-          
+            if (email.isEmpty()) {
+                etEmail.error = "Please enter Username!"
+                etEmail.requestFocus()
+                return
+  
