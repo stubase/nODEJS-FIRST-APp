@@ -57,4 +57,8 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                 etEmail.error = "Please enter Username!"
                 etEmail.requestFocus()
                 return
-  
+            }
+            if (password.isEmpty()) {
+                etPassword.error = "Please enter Password!"
+                etPassword.requestFocus()
+    
