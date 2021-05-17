@@ -49,4 +49,8 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun registerUser() {
         val email = binding.etEmail.text.toString()
-        val password = binding.etPas
+        val password = binding.etPassword.text.toString()
+        val confirmPassword = binding.etConfirmPassword.text.toString()
+        binding.apply {
+
+          
