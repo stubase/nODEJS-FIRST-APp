@@ -61,4 +61,8 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
             if (password.isEmpty()) {
                 etPassword.error = "Please enter Password!"
                 etPassword.requestFocus()
-    
+                return
+            }
+            if (password != confirmPassword) {
+                etConfirmPassword.error = "Password is not same!"
+   
