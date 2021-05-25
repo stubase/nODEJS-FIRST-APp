@@ -65,4 +65,8 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
             }
             if (password != confirmPassword) {
                 etConfirmPassword.error = "Password is not same!"
-   
+                etConfirmPassword.requestFocus()
+                return
+            }
+        }
+        auth.createUserWithEmailAndPassword(email, password).ad
