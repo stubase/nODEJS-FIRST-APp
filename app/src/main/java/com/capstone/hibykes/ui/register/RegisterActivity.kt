@@ -69,4 +69,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                 return
             }
         }
-        auth.createUserWithEmailAndPassword(email, password).ad
+        auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this) {task ->
+            if (task.isSuccessful) {
+                Log.d("Register", "createUserWithEmail:success")
+                
