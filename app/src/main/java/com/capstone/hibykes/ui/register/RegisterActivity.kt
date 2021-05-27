@@ -72,4 +72,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this) {task ->
             if (task.isSuccessful) {
                 Log.d("Register", "createUserWithEmail:success")
-                
+                val user = auth.currentUser
+
+                val profileUpdates = UserProfileChangeRequest.Builder().apply {
+                    val name = email.takeWhile { i
