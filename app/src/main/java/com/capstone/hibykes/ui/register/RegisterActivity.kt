@@ -78,4 +78,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                     val name = email.takeWhile { it != '@' }
                     displayName = name
                 }.build()
-                user?.updateProfile(profileUpdates)?.addOnC
+                user?.updateProfile(profileUpdates)?.addOnCompleteListener { task ->
+                    if(task.isSuccessful){
+                        Log.i("RegisterUpdate","User Profile Update")
+                 
