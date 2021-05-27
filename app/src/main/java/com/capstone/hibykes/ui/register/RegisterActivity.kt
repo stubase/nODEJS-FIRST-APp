@@ -81,4 +81,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                 user?.updateProfile(profileUpdates)?.addOnCompleteListener { task ->
                     if(task.isSuccessful){
                         Log.i("RegisterUpdate","User Profile Update")
-                 
+                    }
+                }
+                user?.sendEmailVerification()?.addOnCompleteListener{
+                    if (it.isSuccess
