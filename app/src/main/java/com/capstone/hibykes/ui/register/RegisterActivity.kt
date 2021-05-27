@@ -75,4 +75,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                 val user = auth.currentUser
 
                 val profileUpdates = UserProfileChangeRequest.Builder().apply {
-                    val name = email.takeWhile { i
+                    val name = email.takeWhile { it != '@' }
+                    displayName = name
+                }.build()
+                user?.updateProfile(profileUpdates)?.addOnC
