@@ -86,4 +86,9 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                 user?.sendEmailVerification()?.addOnCompleteListener{
                     if (it.isSuccessful) {
                         Toast.makeText(baseContext, "Email verification send!", Toast.LENGTH_SHORT).show()
-                        startActivity(I
+                        startActivity(Intent(this, LoginActivity::class.java))
+                        finish()
+                    }
+                }
+            } else {
+              
