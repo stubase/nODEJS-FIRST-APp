@@ -91,4 +91,6 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                     }
                 }
             } else {
-              
+                Log.w("Register", "createUserWithEmail:failure", task.exception)
+                val message = "Authentication failed."
+                showAlert(false,me
