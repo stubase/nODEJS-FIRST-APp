@@ -100,4 +100,6 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun showAlert(check: Boolean, message: String) {
         dialog.setContentView(R.layout.dialog_alert)
-    
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        val tvMessage = dialog.findViewById(R.id.tv_message) as Text
