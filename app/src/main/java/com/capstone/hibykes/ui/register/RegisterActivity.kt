@@ -93,4 +93,11 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
             } else {
                 Log.w("Register", "createUserWithEmail:failure", task.exception)
                 val message = "Authentication failed."
-                showAlert(false,me
+                showAlert(false,message)
+            }
+        }
+    }
+
+    private fun showAlert(check: Boolean, message: String) {
+        dialog.setContentView(R.layout.dialog_alert)
+    
