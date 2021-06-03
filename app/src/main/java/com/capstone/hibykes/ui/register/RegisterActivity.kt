@@ -106,4 +106,10 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         tvMessage.text = message
 
         val btnClose = dialog.findViewById(R.id.iv_close) as ImageView
-        btnClose.setOnClickLi
+        btnClose.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        val lottie = dialog.findViewById(R.id.lottie_dialog) as LottieAnimationView
+
+    
