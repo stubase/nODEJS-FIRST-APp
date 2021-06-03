@@ -116,4 +116,7 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
             lottie.setAnimation("failed.json")
         }else{
             lottie.setAnimation("email_confirmation.json")
-       
+        }
+        dialog.show()
+    }
+}
