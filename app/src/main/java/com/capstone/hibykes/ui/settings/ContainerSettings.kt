@@ -5,4 +5,7 @@ import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
-imp
+import androidx.preference.Preference
+import androidx.preference.PreferenceFragmentCompat
+import com.capstone.hibykes.R
+import com.capstone.hibykes.ui.login.LoginA
