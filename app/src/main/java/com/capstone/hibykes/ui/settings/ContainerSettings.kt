@@ -8,4 +8,9 @@ import android.provider.Settings
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.capstone.hibykes.R
-import com.capstone.hibykes.ui.login.LoginA
+import com.capstone.hibykes.ui.login.LoginActivity
+import com.capstone.hibykes.ui.profile.Profile
+import com.google.firebase.auth.FirebaseAuth
+import java.util.*
+
+class ContainerSettings : Preference
