@@ -18,4 +18,7 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
     private lateinit var profilePref : Preference
     private lateinit var languagePref : Preference
     private lateinit var faqsPref : Preference
-    private lateinit var communityPref : Prefe
+    private lateinit var communityPref : Preference
+    private lateinit var privacyPref : Preference
+    private lateinit var termsPref : Preference
+    private lateinit var logoutPref : Prefere
