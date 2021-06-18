@@ -13,4 +13,7 @@ import com.capstone.hibykes.ui.profile.Profile
 import com.google.firebase.auth.FirebaseAuth
 import java.util.*
 
-class ContainerSettings : Preference
+class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnSharedPreferenceChangeListener {
+
+    private lateinit var profilePref : Preference
+  
