@@ -16,4 +16,6 @@ import java.util.*
 class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnSharedPreferenceChangeListener {
 
     private lateinit var profilePref : Preference
-  
+    private lateinit var languagePref : Preference
+    private lateinit var faqsPref : Preference
+    private lateinit var communityPref : Prefe
