@@ -21,4 +21,7 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
     private lateinit var communityPref : Preference
     private lateinit var privacyPref : Preference
     private lateinit var termsPref : Preference
-    private lateinit var logoutPref : Prefere
+    private lateinit var logoutPref : Preference
+
+    override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
+        TODO("Not yet imp
