@@ -24,4 +24,8 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
     private lateinit var logoutPref : Preference
 
     override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
-        TODO("Not yet imp
+        TODO("Not yet implemented")
+    }
+
+    override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
+        setPreferencesF
