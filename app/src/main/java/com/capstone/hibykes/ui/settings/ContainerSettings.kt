@@ -30,4 +30,5 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.setting, rootKey)
         profilePref = findPreference<Preference>(getString(R.string.key_profile)) as Preference
-       
+        languagePref = findPreference<Preference>(getString(R.string.key_language)) as Preference
+        faqsPref = findPreference<P
