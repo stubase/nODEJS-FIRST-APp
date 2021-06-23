@@ -35,4 +35,10 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
         communityPref = findPreference<Preference>(getString(R.string.key_community)) as Preference
         privacyPref = findPreference<Preference>(getString(R.string.key_privacy)) as Preference
         termsPref = findPreference<Preference>(getString(R.string.key_terms)) as Preference
-        logoutPref = findPreference<Preference>(getStrin
+        logoutPref = findPreference<Preference>(getString(R.string.key_logout)) as Preference
+
+        setSummary()
+        languageOnClick()
+        profileOnClick()
+        helpOnClick()
+     
