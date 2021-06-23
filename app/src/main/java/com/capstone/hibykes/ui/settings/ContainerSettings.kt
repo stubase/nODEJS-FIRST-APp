@@ -32,4 +32,6 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
         profilePref = findPreference<Preference>(getString(R.string.key_profile)) as Preference
         languagePref = findPreference<Preference>(getString(R.string.key_language)) as Preference
         faqsPref = findPreference<Preference>(getString(R.string.key_faqs)) as Preference
-        communityPref = findPreference<Preference>(getString(R.string.key_community)) as
+        communityPref = findPreference<Preference>(getString(R.string.key_community)) as Preference
+        privacyPref = findPreference<Preference>(getString(R.string.key_privacy)) as Preference
+        termsPref = findPref
