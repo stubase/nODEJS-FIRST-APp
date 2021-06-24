@@ -41,4 +41,9 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
         languageOnClick()
         profileOnClick()
         helpOnClick()
-     
+        logoutOnClick()
+    }
+
+    private fun logoutOnClick() {
+        logoutPref.setOnPreferenceClickListener{
+            Fireb
