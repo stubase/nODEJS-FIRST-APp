@@ -48,4 +48,11 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
         logoutPref.setOnPreferenceClickListener{
             FirebaseAuth.getInstance().signOut()
             val intent = Intent(activity, LoginActivity::class.java)
-            startA
+            startActivity(intent)
+            true
+        }
+    }
+
+    private fun helpOnClick() {
+        faqsPref.setOnPreferenceClickListener{
+     
