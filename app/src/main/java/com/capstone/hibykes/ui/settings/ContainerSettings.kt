@@ -62,4 +62,6 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
             true
         }
 
-        communityPref.setOnPreferenceClickLis
+        communityPref.setOnPreferenceClickListener{
+            val url ="https://sites.google.com/bangkit.academy/bangkitacademy2021/resources/graduation-details?authuser=0"
+          
