@@ -56,4 +56,10 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
     private fun helpOnClick() {
         faqsPref.setOnPreferenceClickListener{
             val url ="https://sites.google.com/bangkit.academy/bangkitacademy2021/resources/graduation-details?authuser=0"
-            val intent = Intent(Intent.ACTION_VIE
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse(url))
+            startActivity(intent)
+            true
+        }
+
+        communityPref.setOnPreferenceClickLis
