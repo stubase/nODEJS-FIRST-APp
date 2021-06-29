@@ -70,4 +70,5 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
             true
         }
 
-     
+        privacyPref.setOnPreferenceClickListener{
+            val url ="https://sites.google.com/bangkit.academy/bangkitacademy2021/resourc
