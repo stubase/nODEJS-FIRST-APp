@@ -71,4 +71,7 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
         }
 
         privacyPref.setOnPreferenceClickListener{
-            val url ="https://sites.google.com/bangkit.academy/bangkitacademy2021/resourc
+            val url ="https://sites.google.com/bangkit.academy/bangkitacademy2021/resources/graduation-details?authuser=0"
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse(url))
+            startActivity(int
