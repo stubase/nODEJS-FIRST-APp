@@ -88,4 +88,10 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
     }
 
     private fun profileOnClick() {
-        profilePref.setOnPrefere
+        profilePref.setOnPreferenceClickListener{
+            val intent = Intent(activity, Profile::class.java)
+            startActivity(intent)
+            true
+        }
+    }
+
