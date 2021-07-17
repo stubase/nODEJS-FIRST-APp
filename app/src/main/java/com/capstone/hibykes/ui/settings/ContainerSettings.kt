@@ -81,4 +81,11 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
         termsPref.setOnPreferenceClickListener{
             val url ="https://sites.google.com/bangkit.academy/bangkitacademy2021/resources/graduation-details?authuser=0"
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.se
+            intent.setData(Uri.parse(url))
+            startActivity(intent)
+            true
+        }
+    }
+
+    private fun profileOnClick() {
+        profilePref.setOnPrefere
