@@ -98,4 +98,11 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
     private fun languageOnClick() {
         languagePref.setOnPreferenceClickListener{
             val intent = Intent(Settings.ACTION_LOCALE_SETTINGS)
-         
+            startActivity(intent)
+            true
+        }
+    }
+
+
+    private fun setSummary() {
+        languagePref.summary = Locale.getDefault().displayLang
