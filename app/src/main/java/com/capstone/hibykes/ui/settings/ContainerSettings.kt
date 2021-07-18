@@ -105,4 +105,9 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
 
 
     private fun setSummary() {
-        languagePref.summary = Locale.getDefault().displayLang
+        languagePref.summary = Locale.getDefault().displayLanguage
+    }
+
+    override fun onResume() {
+        super.onResume()
+        preferenceScreen.sharedPreferences.registerOnSharedPreferenceChangeListener(thi
