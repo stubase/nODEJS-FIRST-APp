@@ -114,4 +114,7 @@ class ContainerSettings : PreferenceFragmentCompat(), SharedPreferences.OnShared
     }
     override fun onPause() {
         super.onPause()
-        preferenceScreen.sharedPreferences.unregisterOnSharedPreferenceChangeListener(thi
+        preferenceScreen.sharedPreferences.unregisterOnSharedPreferenceChangeListener(this)
+    }
+
+}
