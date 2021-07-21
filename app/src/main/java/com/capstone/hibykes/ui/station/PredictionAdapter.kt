@@ -10,4 +10,8 @@ class PredictionAdapter(private val listPredictions: List<PredictionEntity>) : R
     private lateinit var onItemClickCallback: OnItemClickCallback
 
     interface OnItemClickCallback {
-        fun onItem
+        fun onItemClicked(data: PredictionEntity)
+    }
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        thi
