@@ -17,4 +17,7 @@ class PredictionAdapter(private val listPredictions: List<PredictionEntity>) : R
         this.onItemClickCallback = onItemClickCallback
     }
 
-    class PredictionViewHolder(private val binding: ItemPredictionsBinding) : RecyclerView.Vie
+    class PredictionViewHolder(private val binding: ItemPredictionsBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(prediction: PredictionEntity) {
+            with(binding) {
+                val date =
