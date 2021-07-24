@@ -22,4 +22,10 @@ class PredictionAdapter(private val listPredictions: List<PredictionEntity>) : R
             with(binding) {
                 val date = prediction.datetime.substring(0,10)
                 val time = prediction.datetime.substring(11,16)
-                tvItemDatetime.text = date 
+                tvItemDatetime.text = date + "\n" + time
+                tvItemDemand.text = prediction.demandCount.toString()
+            }
+        }
+    }
+
+    override fun onCreateViewH
