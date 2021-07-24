@@ -14,4 +14,7 @@ class PredictionAdapter(private val listPredictions: List<PredictionEntity>) : R
     }
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
-        thi
+        this.onItemClickCallback = onItemClickCallback
+    }
+
+    class PredictionViewHolder(private val binding: ItemPredictionsBinding) : RecyclerView.Vie
