@@ -33,4 +33,7 @@ class PredictionAdapter(private val listPredictions: List<PredictionEntity>) : R
         return PredictionViewHolder(itemPredictionsBinding)
     }
 
-    override fun onBindV
+    override fun onBindViewHolder(holder: PredictionViewHolder, position: Int) {
+        val prediction = listPredictions[position]
+        holder.bind(prediction)
+        holder.it
