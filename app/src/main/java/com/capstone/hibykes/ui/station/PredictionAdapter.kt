@@ -36,4 +36,9 @@ class PredictionAdapter(private val listPredictions: List<PredictionEntity>) : R
     override fun onBindViewHolder(holder: PredictionViewHolder, position: Int) {
         val prediction = listPredictions[position]
         holder.bind(prediction)
-        holder.it
+        holder.itemView.setOnClickListener {
+            onItemClickCallback.onItemClicked(listPredictions[holder.adapterPosition])
+        }
+    }
+
+    override fun getIte
