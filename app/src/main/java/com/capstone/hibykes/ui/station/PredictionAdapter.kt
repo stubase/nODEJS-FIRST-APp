@@ -29,4 +29,8 @@ class PredictionAdapter(private val listPredictions: List<PredictionEntity>) : R
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PredictionViewHolder {
-        val itemPredictionsBinding = ItemPredictionsBinding.inflate(LayoutInflater.from(pa
+        val itemPredictionsBinding = ItemPredictionsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return PredictionViewHolder(itemPredictionsBinding)
+    }
+
+    override fun onBindV
