@@ -5,4 +5,6 @@ import com.capstone.hibykes.data.local.entity.StationEntity
 
 object DataDummy {
 
-    fun generateData
+    fun generateDataPrediction(): List<PredictionEntity> {
+        val predictions = ArrayList<PredictionEntity>()
+        predictions.add(PredictionEntity("1", "1", "1 June", 24
