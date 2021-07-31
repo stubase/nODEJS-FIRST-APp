@@ -41,4 +41,5 @@ class PredictionAdapter(private val listPredictions: List<PredictionEntity>) : R
         }
     }
 
-    override fun getIte
+    override fun getItemCount(): Int = listPredictions.size
+}
