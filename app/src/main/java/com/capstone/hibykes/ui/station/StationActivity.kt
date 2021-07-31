@@ -108,3 +108,89 @@ class StationActivity : AppCompatActivity() {
             .titleFormat("{%X}")
             .position(Position.CENTER_BOTTOM)
             .anchor(Anchor.CENTER_BOTTOM)
+            .offsetX(0.0)
+            .offsetY(5.0)
+            .format("{%Value}{groupsSeparator: }")
+
+        cartesian.animation(true)
+        cartesian.yScale().minimum(0.0)
+        cartesian.yAxis(0).labels().format("{%Value}{groupsSeparator: }")
+        cartesian.tooltip().positionMode(TooltipPositionMode.POINT)
+        cartesian.interactivity().hoverMode(HoverMode.BY_X)
+        anyChartView.setChart(cartesian)
+
+    }
+
+    private fun getPredictions(prediction: ArrayList<PredictionEntity>) {
+        predictionAdapter = PredictionAdapter(prediction)
+        predictionAdapter.notifyDataSetChanged()
+
+        binding.apply {
+            rvPrediction.layoutManager = LinearLayoutManager(
+                this@StationActivity,
+                LinearLayoutManager.HORIZONTAL,
+                false
+            )
+            rvPrediction.setHasFixedSize(true)
+            rvPrediction.adapter = predictionAdapter
+        }
+        predictionAdapter.setOnItemClickCallback(object : PredictionAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: PredictionEntity) {
+                val intent = Intent(this@StationActivity, PredictionActivity::class.java)
+                intent.putExtra(EXTRA_PREDICTION, data)
+                startActivity(intent)
+            }
+        })
+    }
+
+    @SuppressLint("SimpleDateFormat")
+    private fun mapPredictionResponsesToEntities(predictions: List<PredictionResponse>): ArrayList<PredictionEntity> {
+        val listPrediction = ArrayList<PredictionEntity>()
+        val randomID = UUID.randomUUID().toString().substring(0, 8)
+        for (prediction in predictions) {
+
+            val predictionMapped = PredictionEntity(
+                randomID,
+                station.name!!,
+                prediction.datetime!!,
+                prediction.demandCount!!,
+                "Bike sharing demand prediction for the next 12 hours"
+            )
+            listPrediction.add(predictionMapped)
+        }
+        return listPrediction
+    }
+
+    private fun setCollapsingToolbar() {
+        setSupportActionBar(binding.toolbar)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+
+        binding.collapsingToolbar.setCollapsedTitleTextAppearance(R.style.collapsingToolbarLayoutTitleColor)
+
+        var isShow = true
+        var scrollRange = -1
+        binding.appBar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { barLayout, verticalOffset ->
+            if (scrollRange == -1) {
+                scrollRange = barLayout?.totalScrollRange!!
+            }
+            if (scrollRange + verticalOffset == 0) {
+                binding.collapsingToolbar.title = getString(R.string.station)
+                binding.toolbar?.setNavigationIcon(R.drawable.ic_back)
+                isShow = true
+            } else if (isShow) {
+                binding.collapsingToolbar.title = " "
+                binding.toolbar?.setNavigationIcon(R.drawable.ic_back_white)
+                isShow = false
+            }
+        })
+
+
+
+        binding.toolbar?.setNavigationOnClickListener(View.OnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        })
+    }
+}
