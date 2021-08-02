@@ -7,4 +7,6 @@ object DataDummy {
 
     fun generateDataPrediction(): List<PredictionEntity> {
         val predictions = ArrayList<PredictionEntity>()
-        predictions.add(PredictionEntity("1", "1", "1 June", 24
+        predictions.add(PredictionEntity("1", "1", "1 June", 24, "low demand"))
+        predictions.add(PredictionEntity("2", "1", "2 June", 33, "high demand"))
+        predictions.add(Predic
