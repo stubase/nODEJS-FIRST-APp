@@ -21,3 +21,34 @@ class ViewModelFactory private constructor(private val mHiBykesRepositories: HiB
         private var instance: ViewModelFactory? = null
 
         fun getInstance(context: Context): ViewModelFactory =
+            instance ?: synchronized(this) {
+                ViewModelFactory(Injection.provideRepository(context)).apply { instance = this }
+            }
+    }
+
+    @Suppress("UNCHECKED_CAST")
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return when {
+            modelClass.isAssignableFrom(HomeViewModel::class.java) -> {
+                HomeViewModel(mHiBykesRepositories) as T
+            }
+            modelClass.isAssignableFrom(StationViewModel::class.java) -> {
+                StationViewModel(mHiBykesRepositories) as T
+            }
+            modelClass.isAssignableFrom(MapsViewModel::class.java) -> {
+                MapsViewModel(mHiBykesRepositories) as T
+            }
+            modelClass.isAssignableFrom(ListStationViewModel::class.java) -> {
+                ListStationViewModel(mHiBykesRepositories) as T
+            }
+            modelClass.isAssignableFrom(PredictionViewModel::class.java) -> {
+                PredictionViewModel(mHiBykesRepositories) as T
+            }
+            modelClass.isAssignableFrom(BookmarkViewModel::class.java) -> {
+                BookmarkViewModel(mHiBykesRepositories) as T
+            }
+            else -> throw Throwable("Unknown ViewModel class: " + modelClass.name)
+        }
+
+    }
+}
