@@ -4,4 +4,4 @@
         app:fontProviderPackage="com.google.android.gms"
         app:fontProviderQuery="Noto Sans"
         app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
-</font-famil
+</font-family>
