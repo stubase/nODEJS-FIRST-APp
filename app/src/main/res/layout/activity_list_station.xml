@@ -48,4 +48,7 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_cons
+            app:layout_constraintStart_toStartOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <androidx.appcompat.widget.Se
