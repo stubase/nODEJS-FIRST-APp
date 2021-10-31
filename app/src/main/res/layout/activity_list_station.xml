@@ -45,4 +45,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/noto_sans"
             android:text="@string/find"
-            android:textColor="@color/whi
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_cons
