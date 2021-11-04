@@ -61,4 +61,6 @@
             android:elevation="10dp"
             app:queryHint="@string/search"
             android:focusableInTouchMode="true"
-       
+            android:theme="@style/SearchViewFocused"
+            app:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf=
