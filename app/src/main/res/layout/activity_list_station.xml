@@ -57,4 +57,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="36dp"
             android:background="@drawable/bg_search"
-            android:fontFamily="@fon
+            android:fontFamily="@font/noto_sans_bold"
+            android:elevation="10dp"
+            app:queryHint="@string/search"
+            android:focusableInTouchMode="true"
+       
