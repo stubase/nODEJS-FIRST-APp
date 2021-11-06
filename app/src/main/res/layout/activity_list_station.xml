@@ -63,4 +63,7 @@
             android:focusableInTouchMode="true"
             android:theme="@style/SearchViewFocused"
             app:iconifiedByDefault="false"
-            app:layout_constraintBottom_toBottomOf=
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_c
