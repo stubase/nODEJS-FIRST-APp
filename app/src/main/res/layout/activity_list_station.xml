@@ -82,4 +82,7 @@
             tools:listitem="@layout/item_list_station" />
 
         <com.facebook.shimmer.ShimmerFrameLayout
-            android:id="@+id
+            android:id="@+id/shimmer_rv_list_station"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:l
