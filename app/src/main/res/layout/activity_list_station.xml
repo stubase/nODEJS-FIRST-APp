@@ -110,4 +110,8 @@
                     layout="@layout/item_shimmer_list_station"/>
 
             </LinearLayout>
-     
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
