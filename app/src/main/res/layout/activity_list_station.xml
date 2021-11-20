@@ -104,4 +104,10 @@
                     layout="@layout/item_shimmer_list_station"/>
 
                 <include
-                    layout="@layout/item_shimmer_list_st
+                    layout="@layout/item_shimmer_list_station"/>
+
+                <include
+                    layout="@layout/item_shimmer_list_station"/>
+
+            </LinearLayout>
+     
