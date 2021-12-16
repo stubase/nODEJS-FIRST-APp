@@ -42,4 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:background="@drawable/bg_input"
-  
+        android:fontFamily="@font/noto_sans_bold"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:p
