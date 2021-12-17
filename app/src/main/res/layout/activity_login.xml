@@ -45,4 +45,7 @@
         android:fontFamily="@font/noto_sans_bold"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:p
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textCursorDrawable="@drawable/cursor_input"
+        app:layout_constraintE
