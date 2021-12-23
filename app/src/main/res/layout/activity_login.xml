@@ -61,4 +61,7 @@
         android:fontFamily="@font/noto_sans_bold"
         android:hint="@string/password"
         android:textCursorDrawable="@drawable/cursor_input"
-        android:i
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
