@@ -92,4 +92,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            andro
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/dont_have_an_account" />
+
+        <Button
+            android:id="@+id/btn_register"
+   
