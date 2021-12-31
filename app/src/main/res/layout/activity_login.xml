@@ -97,4 +97,7 @@
 
         <Button
             android:id="@+id/btn_register"
-   
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@color/transparant"
+            android:padding="
