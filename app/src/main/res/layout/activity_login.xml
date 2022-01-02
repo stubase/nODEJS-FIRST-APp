@@ -100,4 +100,8 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:background="@color/transparant"
-            android:padding="
+            android:padding="0dp"
+            android:text="@string/register"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.Co
