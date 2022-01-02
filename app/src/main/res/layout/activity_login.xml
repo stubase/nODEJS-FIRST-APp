@@ -104,4 +104,4 @@
             android:text="@string/register"
             android:textColor="@color/primary" />
     </LinearLayout>
-</androidx.constraintlayout.widget.Co
+</androidx.constraintlayout.widget.ConstraintLayout>
