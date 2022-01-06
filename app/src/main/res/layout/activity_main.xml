@@ -15,4 +15,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:cnb_menuResource="@menu/bottom_nav"
         app:cnb_orientationMode="horizontal"
-        app:cnb_u
+        app:cnb_unselectedColor="@color/grey"
+        android:background="@color/white"
+        android:elevation="8dp"/>
+
+    <FrameLayout
+        android:id=
