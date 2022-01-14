@@ -155,3 +155,37 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginEnd="8dp"/>
             <TextView
+                android:id="@+id/tv_station"
+                android:fontFamily="@font/noto_sans"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/station" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/img_time"/>
+        <Button
+            android:id="@+id/btn_save_bookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:layout_margin="20dp"
+            android:visibility="visible"
+            android:text="@string/save_to_bookmark"/>
+
+        <Button
+            android:id="@+id/btn_remove_bookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:text="@string/remove_from_bookmark"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
