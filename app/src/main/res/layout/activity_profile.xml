@@ -22,4 +22,7 @@
         android:layout_height="200dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_user"
-        andro
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        ap
