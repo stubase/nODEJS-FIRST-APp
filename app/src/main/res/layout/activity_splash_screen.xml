@@ -12,3 +12,6 @@
         android:layout_height="200dp"
         android:src="@drawable/bg_hibykes"
         android:contentDescription="@string/logo_hibykes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toSt
