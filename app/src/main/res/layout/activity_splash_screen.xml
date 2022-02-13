@@ -9,4 +9,6 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="200dp"
-        an
+        android:layout_height="200dp"
+        android:src="@drawable/bg_hibykes"
+        android:contentDescription="@string/logo_hibykes"
