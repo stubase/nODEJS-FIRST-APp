@@ -11,4 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:background="@color/primary"
-        android:fitsSystemWindows="t
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_
