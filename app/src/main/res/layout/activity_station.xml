@@ -35,4 +35,6 @@
                         android:id="@+id/img_backdrop"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        an
+                        android:layout_gravity="center|end"
+                        android:scaleType="centerCrop"
+                        andro
