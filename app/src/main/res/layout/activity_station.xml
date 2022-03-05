@@ -37,4 +37,6 @@
                         android:layout_height="match_parent"
                         android:layout_gravity="center|end"
                         android:scaleType="centerCrop"
-                        andro
+                        android:src="@drawable/img_bike_station"
+                        app:layout_collapseMode="parallax"
+                        app:layout_constraintBottom_toBottomOf="
