@@ -49,4 +49,8 @@
                         android:layout_height="70dp"
                         android:background="@drawable/bg_transparent_white"
                         app:layout_constraintBottom_toBottomOf="@+id/img_backdrop"
-                        app:layout_co
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+              
