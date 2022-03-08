@@ -47,4 +47,6 @@
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
-                        android:background="@drawable
+                        android:background="@drawable/bg_transparent_white"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_backdrop"
+                        app:layout_co
