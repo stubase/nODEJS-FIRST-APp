@@ -64,4 +64,10 @@
                 app:layout_collapseMode="pin"
                 app:titleTextColor="@color/greyDark"/>
 
-        </com.google.android.material.appbar.Collaps
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:
