@@ -82,4 +82,7 @@
             android:orientation="vertical"
             android:paddingTop="20dp">
 
-   
+            <TextView
+                android:id="@+id/tv_station_name"
+                android:fontFamily="@font/noto_sans_bold"
+                andr
