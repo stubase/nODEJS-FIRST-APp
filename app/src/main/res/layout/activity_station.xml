@@ -103,4 +103,6 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/ic_location_blue"
-                    android:foregr
+                    android:foregroundGravity="top"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="8dp"/>
