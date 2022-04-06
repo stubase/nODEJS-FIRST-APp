@@ -157,4 +157,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <com.anychar
+                    <com.anychart.AnyChartView
+                        android:id="@+id/any_chart_view"
+                        android:layout_width="match_parent"
+            
