@@ -168,4 +168,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-        
+                    <TextView
+                        style="@style/Text.Medium"
+                        android:id="@+id/tv_null"
+           
