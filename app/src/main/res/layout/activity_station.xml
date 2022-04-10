@@ -171,4 +171,6 @@
                     <TextView
                         style="@style/Text.Medium"
                         android:id="@+id/tv_null"
-           
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                     
