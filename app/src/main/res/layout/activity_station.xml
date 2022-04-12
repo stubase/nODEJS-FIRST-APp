@@ -175,4 +175,6 @@
                         android:layout_height="wrap_content"
                         android:text="@string/data_prediction_null"
                         android:visibility="gone"
-                        app:layout_constraintBottom_toBot
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStar
