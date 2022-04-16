@@ -187,4 +187,9 @@
                 android:id="@+id/rv_prediction"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_ma
+                android:layout_marginHorizontal="16dp"
+                tools:listitem="@layout/item_predictions" />
+
+            <Button
+                android:id="@+id/direction"
+                a
