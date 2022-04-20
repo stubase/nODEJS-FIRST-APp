@@ -197,4 +197,9 @@
                 android:layout_marginHorizontal="24dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/bg_
+                android:background="@drawable/bg_button"
+                android:text="@string/direction" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.Coordin
