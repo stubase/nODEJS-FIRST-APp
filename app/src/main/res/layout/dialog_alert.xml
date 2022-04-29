@@ -26,4 +26,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <co
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_dialog"
+                android:layout_width=
