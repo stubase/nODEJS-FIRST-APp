@@ -34,4 +34,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/iv_close"
-                a
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_speed="1" />
+
+            <TextVie
