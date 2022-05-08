@@ -50,4 +50,6 @@
                 android:gravity="center"
                 android:text="@string/message"
                 android:textSize="20sp"
-      
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constrain
