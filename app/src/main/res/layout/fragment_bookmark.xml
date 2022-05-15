@@ -16,4 +16,7 @@
             android:layout_height="match_parent">
 
             <View
-                a
+                android:id="@+id/view3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+ 
