@@ -44,4 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 android:fontFamily="@font/noto_sans"
-                android:text=
+                android:text="@string/bookmark_desc"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:la
