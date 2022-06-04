@@ -61,4 +61,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_bookmark"
-            andr
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            tools:listitem="
