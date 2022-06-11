@@ -20,4 +20,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding
+        android:padding="25dp"
+        android:background="@drawable/bg_toolbar_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_cons
