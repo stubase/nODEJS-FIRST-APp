@@ -23,4 +23,8 @@
         android:padding="25dp"
         android:background="@drawable/bg_toolbar_transparent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_cons
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:
