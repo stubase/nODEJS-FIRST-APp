@@ -42,4 +42,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                and
+                android:text="@string/find"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="16sp"/>
+
+        </Linear
