@@ -46,4 +46,9 @@
                 android:fontFamily="@font/noto_sans_bold"
                 android:textSize="16sp"/>
 
-        </Linear
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:l
