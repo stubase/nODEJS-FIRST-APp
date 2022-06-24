@@ -57,4 +57,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/bg_search"
-        andro
+        android:elevation="3dp"
+        android:theme="@style/SearchViewFocused"
+        app:queryBackground="@color/transparant"
+        app:iconifiedByDefault="false
