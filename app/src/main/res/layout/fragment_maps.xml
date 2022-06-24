@@ -60,4 +60,7 @@
         android:elevation="3dp"
         android:theme="@style/SearchViewFocused"
         app:queryBackground="@color/transparant"
-        app:iconifiedByDefault="false
+        app:iconifiedByDefault="false"
+        app:defaultQueryHint="@string/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constrain
