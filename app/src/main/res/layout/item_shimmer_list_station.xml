@@ -8,4 +8,9 @@
     app:cardElevation="7dp"
     app:cardCornerRadius="7dp">
 
-    <LinearLa
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Imag
