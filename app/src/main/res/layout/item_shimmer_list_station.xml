@@ -13,4 +13,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Imag
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            a
