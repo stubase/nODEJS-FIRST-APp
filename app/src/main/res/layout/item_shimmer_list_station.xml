@@ -43,4 +43,8 @@
                 android:fontFamily="@font/noto_sans"
                 android:textSize="16sp"
                 android:layout_marginTop="4dp"
-       
+                android:text="@string/desc"
+                android:textColor="@color/shimmer"
+                android:background="@color/shimmer"/>
+
+        
