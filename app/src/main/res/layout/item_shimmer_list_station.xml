@@ -39,4 +39,8 @@
             <TextView
                 android:id="@+id/tv_item_desc"
                 android:layout_width="150dp"
-                android:layout_height="wrap_cont
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+       
