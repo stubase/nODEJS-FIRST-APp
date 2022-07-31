@@ -30,4 +30,9 @@
 
             <FrameLayout
                 android:layout_width="150dp"
-     
+                android:layout_height="200dp"
+                android:background="@drawable/bg_transparent_black" />
+        </FrameLayout>
+
+
+        <Te
