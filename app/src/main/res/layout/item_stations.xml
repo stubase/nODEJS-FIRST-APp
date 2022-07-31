@@ -35,4 +35,7 @@
         </FrameLayout>
 
 
-        <Te
+        <TextView
+            android:id="@+id/tv_item_name"
+            style="@style/Text.Regular"
+            android:fontFamily="@font/noto_sans_bold"
