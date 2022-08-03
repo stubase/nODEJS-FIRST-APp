@@ -45,4 +45,8 @@
             android:layout_marginLeft="16dp"
             android:text="@string/name"
             android:textColor="@color/white"
-            app:layout_co
+            app:layout_constraintBottom_toTopOf="@+id/tv_item_desc"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv
