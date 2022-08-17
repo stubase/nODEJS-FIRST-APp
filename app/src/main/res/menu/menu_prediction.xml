@@ -6,4 +6,4 @@
         android:icon="@drawable/toggle_bookmark"
         android:title="@string/bookmark"
         app:showAsAction="always" />
-</men
+</menu>
