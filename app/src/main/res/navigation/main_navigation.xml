@@ -13,4 +13,6 @@
 
     <fragment
         android:id="@+id/navigation_maps"
- 
+        android:name="com.capstone.hibykes.ui.maps.MapsFragment"
+        android:label="@string/title_maps"
+        tools:layout
