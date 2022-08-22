@@ -19,4 +19,9 @@
 
     <fragment
         android:id="@+id/navigation_bookmark"
-        android:name="com.capstone.hibykes.ui.bookmark.BookmarkFra
+        android:name="com.capstone.hibykes.ui.bookmark.BookmarkFragment"
+        android:label="@string/title_bookmark"
+        tools:layout="@layout/fragment_bookmark" />
+
+    <fragment
+        android:id="@+id/nav
