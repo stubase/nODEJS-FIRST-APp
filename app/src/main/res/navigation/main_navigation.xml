@@ -15,4 +15,8 @@
         android:id="@+id/navigation_maps"
         android:name="com.capstone.hibykes.ui.maps.MapsFragment"
         android:label="@string/title_maps"
-        tools:layout
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/navigation_bookmark"
+        android:name="com.capstone.hibykes.ui.bookmark.BookmarkFra
