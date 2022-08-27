@@ -24,4 +24,7 @@
         tools:layout="@layout/fragment_bookmark" />
 
     <fragment
-        android:id="@+id/nav
+        android:id="@+id/navigation_settings"
+        android:name="com.capstone.hibykes.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+       
