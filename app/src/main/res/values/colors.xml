@@ -11,4 +11,9 @@
     <color name="primary">#55A8F4</color>
     <color name="primaryDark">#444559</color>
     <color name="secondary">#EAFFFE</color>
-    <color name="secondaryDark">#4FAC
+    <color name="secondaryDark">#4FACAC</color>
+    <color name="accent">#2E94F2</color>
+    <color name="grey">#D1D1D1</color>
+    <color name="greyDark">#616161</color>
+
+    <color name="i
