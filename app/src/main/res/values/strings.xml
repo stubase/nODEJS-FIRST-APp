@@ -1,2 +1,5 @@
 <resources>
-    <string name="app_name">HiBykes</s
+    <string name="app_name">HiBykes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <
