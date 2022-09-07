@@ -12,4 +12,8 @@
     <string name="login">Login</string>
     <string name="email_not_valid">Email is not valid</string>
     <string name="password_not_valid">Password is not valid !</string>
-    <string name="confirm_password">Password Confi
+    <string name="confirm_password">Password Confirm</string>
+    <string name="name">Name</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_maps">Maps</string>
+    <string name="titl
