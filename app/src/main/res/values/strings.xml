@@ -7,4 +7,7 @@
     <string name="title_home">Home</string>
     <string name="register">Register</string>
     <string name="username">Username</string>
-    <string name="email">Ema
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="email_not_valid">Email is not 
