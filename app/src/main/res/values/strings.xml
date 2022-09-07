@@ -10,4 +10,6 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="email_not_valid">Email is not 
+    <string name="email_not_valid">Email is not valid</string>
+    <string name="password_not_valid">Password is not valid !</string>
+    <string name="confirm_password">Password Confi
