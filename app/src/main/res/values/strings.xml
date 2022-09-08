@@ -22,4 +22,6 @@
     <string name="list_of_station">List of Bike Stations</string>
     <string name="location">Location</string>
     <string name="temperature">Temperature</string>
-    <string nam
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="air_pollution">Air Pollution</str
