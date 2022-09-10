@@ -27,4 +27,6 @@
     <string name="air_pollution">Air Pollution</string>
     <string name="air_pollution_status">Air Pollution Status</string>
     <string name="title_activity_station">StationActivity</string>
-    <!-- Stri
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment
