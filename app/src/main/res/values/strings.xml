@@ -24,4 +24,7 @@
     <string name="temperature">Temperature</string>
     <string name="humidity">Humidity</string>
     <string name="wind_speed">Wind Speed</string>
-    <string name="air_pollution">Air Pollution</str
+    <string name="air_pollution">Air Pollution</string>
+    <string name="air_pollution_status">Air Pollution Status</string>
+    <string name="title_activity_station">StationActivity</string>
+    <!-- Stri
