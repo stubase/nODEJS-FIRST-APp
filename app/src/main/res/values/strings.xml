@@ -41,4 +41,7 @@
     <string name="or">Or</string>
     <string name="weather">Weather</string>
     <string name="home_desc">Let\'s Check The Bike Sharing \nInformation In Your Area !</string>
-    <string name="search">
+    <string name="search">Search bike station</string>
+    <string name="aqi">air quality index</string>
+    <string name="aqi_index">AQI</string>
+    <string name="aqi_level">Aq
