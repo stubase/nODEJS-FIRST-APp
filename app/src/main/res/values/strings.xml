@@ -50,4 +50,7 @@
     <string name="direction">Direction</string>
     <string name="demand">Demand \nPrediction</string>
     <string name="datetime">Datetime</string>
-    <string name="bike_sharing_demand_on">Bike Sharin
+    <string name="bike_sharing_demand_on">Bike Sharing Demand On</string>
+    <string name="cd_register">Background Login</string>
+    <string name="logo_hibykes">Logo HiBykes</string>
+    <string name="header_re
