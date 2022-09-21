@@ -48,4 +48,6 @@
     <string name="title_prediction">Prediction Result</string>
     <string name="station_address">Jl. Perintis Kemerdekaan No. 5 KM.21, Pulo gadung, Jakarta Timur, DKI Jakarta 32811</string>
     <string name="direction">Direction</string>
-    <string name="demand">
+    <string name="demand">Demand \nPrediction</string>
+    <string name="datetime">Datetime</string>
+    <string name="bike_sharing_demand_on">Bike Sharin
