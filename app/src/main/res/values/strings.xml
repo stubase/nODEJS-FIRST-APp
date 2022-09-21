@@ -46,4 +46,6 @@
     <string name="aqi_index">AQI</string>
     <string name="aqi_level">Aqi Level</string>
     <string name="title_prediction">Prediction Result</string>
-    <string name="station_address">Jl. Perintis Kemerdekaan No
+    <string name="station_address">Jl. Perintis Kemerdekaan No. 5 KM.21, Pulo gadung, Jakarta Timur, DKI Jakarta 32811</string>
+    <string name="direction">Direction</string>
+    <string name="demand">
