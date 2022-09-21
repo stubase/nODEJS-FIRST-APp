@@ -44,4 +44,6 @@
     <string name="search">Search bike station</string>
     <string name="aqi">air quality index</string>
     <string name="aqi_index">AQI</string>
-    <string name="aqi_level">Aq
+    <string name="aqi_level">Aqi Level</string>
+    <string name="title_prediction">Prediction Result</string>
+    <string name="station_address">Jl. Perintis Kemerdekaan No
