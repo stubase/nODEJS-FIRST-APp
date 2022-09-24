@@ -53,4 +53,6 @@
     <string name="bike_sharing_demand_on">Bike Sharing Demand On</string>
     <string name="cd_register">Background Login</string>
     <string name="logo_hibykes">Logo HiBykes</string>
-    <string name="header_re
+    <string name="header_register">Create New \nAccount</string>
+    <string name="desc_register">Please Register With \nYour Account</string>
+    <string name="he
