@@ -55,4 +55,6 @@
     <string name="logo_hibykes">Logo HiBykes</string>
     <string name="header_register">Create New \nAccount</string>
     <string name="desc_register">Please Register With \nYour Account</string>
-    <string name="he
+    <string name="header_login">Welcome \nBack !</string>
+    <string name="desc_login">Please Login With \nYour Account</string>
+    <string name="have_an_ac
