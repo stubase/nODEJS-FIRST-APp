@@ -68,4 +68,6 @@
     <string name="key_language">key_language</string>
     <string name="language">Language</string>
     <string name="key_notification">key_notification</string>
-    <st
+    <string name="notification">Notification</string>
+    <string name="key_privacy">key_privacy</string>
+    <string name="profile">Data Profile</string>
