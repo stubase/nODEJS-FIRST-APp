@@ -62,4 +62,7 @@
     <string name="view_all">View All</string>
     <string name="find">Find A Bike Station Near You</string>
     <string name="list_station">List Station</string>
-    <string name="bookmark">Bookmark</
+    <string name="bookmark">Bookmark</string>
+    <string name="bookmark_desc">Bookmark Description</string>
+    <string name="key_profile">key_profile</string>
+    <string name="key_lan
