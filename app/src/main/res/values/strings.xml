@@ -65,4 +65,7 @@
     <string name="bookmark">Bookmark</string>
     <string name="bookmark_desc">Bookmark Description</string>
     <string name="key_profile">key_profile</string>
-    <string name="key_lan
+    <string name="key_language">key_language</string>
+    <string name="language">Language</string>
+    <string name="key_notification">key_notification</string>
+    <st
