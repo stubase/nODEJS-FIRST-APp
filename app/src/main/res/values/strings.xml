@@ -81,4 +81,7 @@
     <string name="key_community">key_community</string>
     <string name="message">Message</string>
     <string name="save_to_bookmark">Save to Bookmark</string>
-    <string name="remove_from_bookmark">Remove f
+    <string name="remove_from_bookmark">Remove from bookmark</string>
+    <string name="count">0</string>
+    <string name="demand_count">10</string>
+    <string name="date_and_time">Dat
