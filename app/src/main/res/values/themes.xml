@@ -26,4 +26,9 @@
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="Text.Regular"
+    <style name="Text.Regular">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Small">
+        <item name="android:textSize">12sp</item>
