@@ -35,4 +35,8 @@
     </style>
 
     <style name="collapsingToolbarLayoutTitleColor" parent="@android:style/TextAppearance.Medium">
-        <item 
+        <item name="android:textColor">@color/greyDark</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+    </style>
+
+    <style name="SearchViewFocu
