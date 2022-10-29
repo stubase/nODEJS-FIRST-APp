@@ -39,4 +39,6 @@
         <item name="android:fontFamily">@font/noto_sans_bold</item>
     </style>
 
-    <style name="SearchViewFocu
+    <style name="SearchViewFocused" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@color/greyDark</item>
+        <it
