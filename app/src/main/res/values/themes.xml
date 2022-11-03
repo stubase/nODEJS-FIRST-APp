@@ -48,4 +48,5 @@
 
     <style name="Theme.HiBykes.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="Theme.HiBykes.PopupOve
+    <style name="Theme.HiBykes.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
