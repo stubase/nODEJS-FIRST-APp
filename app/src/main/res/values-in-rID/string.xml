@@ -68,3 +68,25 @@
     <string name="key_profile">key_profile</string>
     <string name="key_language">key_language</string>
     <string name="language">Bahasa</string>
+    <string name="key_notification">key_notification</string>
+    <string name="notification">Notifikasi</string>
+    <string name="key_privacy">key_privacy</string>
+    <string name="profile">Data Profile</string>
+    <string name="key_terms">key_terms</string>
+    <string name="pricacy">Privacy Policy</string>
+    <string name="terms">Terms dan Kondisi</string>
+    <string name="key_logout">key_logout</string>
+    <string name="logout">Keluar</string>
+    <string name="key_faqs">key_faqs</string>
+    <string name="faqs">FAQs</string>
+    <string name="key_community">key_community</string>
+    <string name="message">Pesan</string>
+    <string name="save_to_bookmark">Simpan ke Bookmark</string>
+    <string name="remove_from_bookmark">Hapus dari Bookmark</string>
+    <string name="count">0</string>
+    <string name="demand_count">10</string>
+    <string name="date_and_time">Tanggal \ndan Waktu</string>
+    <string name="email_desi">musfiroh.desi@gmail.com</string>
+    <string name="username_desi">Desi Musfiroh</string>
+    <string name="data_prediction_null">Data Prediksi belum tersedia</string>
+</resources>
