@@ -4,4 +4,7 @@
 
     <PreferenceCategory>
 
-        <P
+        <Preference
+            android:icon="@drawable/ic_sperson"
+            android:key="@string/key_profile"
+            android:title="@string/profil
