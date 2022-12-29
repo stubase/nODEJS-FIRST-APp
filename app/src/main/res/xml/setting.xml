@@ -21,4 +21,8 @@
     <PreferenceCategory>
 
         <Preference
-            an
+            android:icon="@drawable/ic_sfaqs"
+            android:key="@string/key_faqs"
+            android:title="@string/faqs" />
+
+        <Preference
