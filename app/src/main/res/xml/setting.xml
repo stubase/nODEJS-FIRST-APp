@@ -12,4 +12,13 @@
 
         <Preference
             android:icon="@drawable/ic_stranslate"
-            android:key="@string/key_l
+            android:key="@string/key_language"
+            android:title="@string/language" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+
+        <Preference
+            an
