@@ -26,3 +26,8 @@
             android:title="@string/faqs" />
 
         <Preference
+            android:icon="@drawable/ic_scommunity"
+            android:key="@string/key_community"
+            android:title="Community" />
+
+        <Preference
