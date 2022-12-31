@@ -31,3 +31,6 @@
             android:title="Community" />
 
         <Preference
+            android:icon="@drawable/ic_sprivacy"
+            android:key="@string/key_privacy"
+            android:title="@string/p
