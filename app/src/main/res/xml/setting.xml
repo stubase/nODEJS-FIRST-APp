@@ -33,4 +33,9 @@
         <Preference
             android:icon="@drawable/ic_sprivacy"
             android:key="@string/key_privacy"
-            android:title="@string/p
+            android:title="@string/pricacy" />
+
+        <Preference
+            android:icon="@drawable/ic_sterms"
+            android:key="@string/key_terms"
+            andro
