@@ -38,4 +38,10 @@
         <Preference
             android:icon="@drawable/ic_sterms"
             android:key="@string/key_terms"
-            andro
+            android:title="@string/terms" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <Preference
+            android:icon="@drawab
