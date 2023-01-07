@@ -44,4 +44,9 @@
 
     <PreferenceCategory>
         <Preference
-            android:icon="@drawab
+            android:icon="@drawable/ic_slogout"
+            android:key="@string/key_logout"
+            android:title="@string/logout"/>
+    </PreferenceCategory>
+
+</Preference
