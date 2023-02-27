@@ -16,4 +16,12 @@ buildscript {
 }
 
 allprojects {
-    reposito
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete r
